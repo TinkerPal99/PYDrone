@@ -1,0 +1,14 @@
+Notizen: 
+
+Aktuell kann die Query nur bei beendetem Prozess erweitert werden- Auch der STR-C kann bei abbruch an einer ungünstigen Stelle zu
+einer ungeschlossenen Datei führen.
+
+Lösungsidee:
+- erweiterte Wartezeit (time.sleep)
+
+
+! RPS noch nicht auf neues Filesystem angepasst
+
+
+https://jankarres.de/2013/12/raspberry-pi-ssh-schluessel-erstellen-und-passwort-aendern/
+Empfehlung von benni zum Thema sicherheit, wird durchgeführt
