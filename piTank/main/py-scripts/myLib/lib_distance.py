@@ -1,5 +1,4 @@
 #! usr/bin/env/python
-from __future__ import print_function
 import math
 import time
 import RPi.GPIO as GPIO
@@ -14,7 +13,6 @@ speedSound = 33100 + (0.6 * temperature)
 
 def simple_measure(GPIO_TRIGGER, GPIO_ECHO):
     # Set pins as output and input
-    global stop
     GPIO.setup(GPIO_TRIGGER, GPIO.OUT)  # Trigger
     GPIO.setup(GPIO_ECHO, GPIO.IN)  # Echo
     # This function measures a distance
@@ -26,7 +24,7 @@ def simple_measure(GPIO_TRIGGER, GPIO_ECHO):
 
     while GPIO.input(GPIO_ECHO) == 0:
         start = time.time()
-    time.sleep
+    time.sleep(0.01)
     while GPIO.input(GPIO_ECHO) == 1:
         stop = time.time()
         elapsed = stop - start
