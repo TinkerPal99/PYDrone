@@ -50,20 +50,29 @@ def measure_average_of_3(GPIO_TRIGGER, GPIO_ECHO):
 def measure_average_of_x(x, GPIO_TRIGGER, GPIO_ECHO):
     # This function takes x measurements and
     # returns the average.
-    distance = []
+
+    # init distance_list as a list
+    # set distance as 0
+    distance_list = []
+    distance = 0
+    # take x measurements und append them to the list
     for y in range(0, x):
-        distance.append(simple_measure(GPIO_TRIGGER, GPIO_ECHO))
+        distance_list.append(simple_measure(GPIO_TRIGGER, GPIO_ECHO))
         time.sleep(0.1)
-    for y in range(0, len(distance)):
-        distance = distance[y]
-    distance = distance / len(distance)
-    return distance
+    for y in range(0, len(distance_list)):
+        # now sum all entries of the list up
+        distance = distance + distance_list[y]
+        # take average by dividing summed distance with lenght of the list
+        distance_q = distance / len(distance_list)
+    return distance_q
 
 
-def printMeasure(GPIO_TRIGGER, GPIO_ECHO):
+def printSettings():
     print("Ultrasonic Measurement")
     print("Speed of sound is %s m/s at %s deg" % (speedSound / 100, temperature))
 
+
+def print_formattedMeasure(GPIO_TRIGGER, GPIO_ECHO):
     # Set trigger to False (Low)
     GPIO.output(GPIO_TRIGGER, GPIO.LOW)
     # Allow module to settle
@@ -78,5 +87,5 @@ def printMeasure(GPIO_TRIGGER, GPIO_ECHO):
         # User pressed CTRL-C
         # Reset GPIO settings
         print("Keyboard interrupt ")
-
+        GPIO.cleanup()
     return math.floor(distance)
