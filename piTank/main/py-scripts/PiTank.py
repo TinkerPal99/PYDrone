@@ -1,6 +1,6 @@
 #! usr/bin/env/python
 from myLib import lib_movement
-
+import RPi.GPIO as GPIO
 
 class PiTank:
     enableA = 1
