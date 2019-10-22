@@ -1,3 +1,7 @@
+# coding=utf-8
+## @package archive
+# Documentation for this module.
+
 #! usr/bin/env/python
 import time
 from threading import Thread

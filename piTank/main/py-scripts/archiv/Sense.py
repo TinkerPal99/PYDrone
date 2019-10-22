@@ -1,3 +1,7 @@
+# coding=utf-8
+## @package archive
+# Documentation for this module.
+
 #! usr/bin/env/python
 from datetime import datetime
 import time

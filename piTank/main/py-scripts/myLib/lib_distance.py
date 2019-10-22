@@ -1,3 +1,21 @@
+# coding=utf-8
+## @package Libraries
+#
+# <h4>Documentation for this library <u>distance</u>.</h4>
+#
+# <p>
+# <h5><i>Zweck</i>:</h5> Methoden zur Anbindung eines schallbasierten 4-Pin Abstandssensor <br>
+# <h5><i>Inhalt</i>:</h5>
+# <table><tr>Methoden:
+# <td>simple_measure(int:pin ,int:pin)</td>
+# <td>measure_average_of_3(int:pin ,int:pin)</td>
+# <td>measure_average_of_x(int:Anzahl der Wiederholungen, int:pin, int:pin)</td>
+# <td>printSettings(_)</td>
+# <td>print_formattedMeasure(int:pin, int:pin)</td>
+# <tr></table>
+# <p>
+#_____________________________________________________________________________________________________________
+
 #! usr/bin/env/python
 import math
 import time

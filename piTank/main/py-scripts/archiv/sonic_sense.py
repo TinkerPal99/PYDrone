@@ -1,3 +1,7 @@
+# coding=utf-8
+## @package archive
+# Documentation for this module.
+
 #!/usr/bin/python
 # Script for Smoothing Ultraschall-Sensor Datenstrom; in Python; Anwendbar fuer einen Raspberry Pi
 

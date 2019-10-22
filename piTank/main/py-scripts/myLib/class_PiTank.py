@@ -1,3 +1,7 @@
+# coding=utf-8
+## @package Libraries
+# Documentation for this module.
+
 #! usr/bin/env/python
 from myLib import lib_movement
 import RPi.GPIO as GPIO

@@ -1,3 +1,20 @@
+# coding=utf-8
+## @package Libraries
+#
+# <h4>Documentation for this library <u>datawork</u>.</h4>
+#
+# <p>
+# <h5><i>Zweck</i>:</h5> Restaufrufe <br>
+# <h5><i>Inhalt</i>:</h5>
+# <table><tr>Methoden:
+# <td>request(_)</td>
+# <td>ckeck_payment(non_functional)</td>
+# <tr></table>
+# <p>
+#<br><br>
+#
+#
+#_____________________________________________________________________________________________________________
 #! usr/bin/env/python
 import httplib
 import time

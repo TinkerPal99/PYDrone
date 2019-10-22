@@ -1,3 +1,7 @@
+# coding=utf-8
+## @package Libraries
+# Documentation for this module.
+
 #! usr/bin/env/python
 import time
 import RPi.GPIO as GPIO

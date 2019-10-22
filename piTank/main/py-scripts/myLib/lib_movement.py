@@ -1,3 +1,24 @@
+# coding=utf-8
+## @package Libraries
+#
+# <h4>Documentation for this library <u>movement</u>.</h4>
+#
+# <p>
+# <h5><i>Zweck</i>:</h5> Betreiben einer H-Brücke für Motorsteuerung <br>
+# <h5><i>Inhalt</i>:</h5>
+# <table><tr>Methoden:
+# <td>wheel_left_forward(int:pin ,int:pin, int:pin)</td>
+# <td>wheel_right_forward(int:pin ,int:pin, int:pin)</td>
+# <td>wheel_left_backward(int:pin ,int:pin, int:pin)</td>
+# <td>wheel_right_backward(int:pin ,int:pin, int:pin)</td>
+# <td>clean(int:pi, int:pi, int:pi, int:pi, int:pi, int:pi)</td>
+# <tr></table>
+# <p>
+#<br><br>
+#
+
+#_____________________________________________________________________________________________________________
+
 #! usr/bin/env/python
 import time
 import RPi.GPIO as GPIO

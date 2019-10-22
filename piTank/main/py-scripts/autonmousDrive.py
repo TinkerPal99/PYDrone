@@ -2,7 +2,7 @@
 import time
 import RPi.GPIO as GPIO
 
-from PiTank import (PiTank)
+from myLib.class_PiTank import (PiTank)
 from myLib import lib_distance, lib_movement
 
 GPIO.setwarnings(False)
