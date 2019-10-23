@@ -1,7 +1,7 @@
 # coding=utf-8
 ## @package Libraries
 #
-# <h4>Documentation for this library <u>distance</u>.</h4>
+# <h4>Documentation for this library <u>lib_distance.py</u>.</h4>
 #
 # <p>
 # <h5><i>Zweck</i>:</h5> Methoden zur Anbindung eines schallbasierten 4-Pin Abstandssensor <br>
@@ -14,41 +14,49 @@
 # <td>print_formattedMeasure(int:pin, int:pin)</td>
 # <tr></table>
 # <p>
-#_____________________________________________________________________________________________________________
+# _____________________________________________________________________________________________________________
 
-#! usr/bin/env/python
+# ! usr/bin/env/python
 import math
 import time
 import RPi.GPIO as GPIO
 
-# GPIO.setwarnings(False)
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
-# Speed of sound in cm/s at temperature
 
+##Documentation for a variable "temperature"
+#
+# Diese Variable dient als Temperaturwert für die Schallgeschwindigkeitsberechnung.
 temperature = 20
+
+##Documentation for a variable "speedSound"
+#
+# Schallgeschwindigkeit in cm/s auf Temperatur
 speedSound = 33100 + (0.6 * temperature)
 
 
 def simple_measure(GPIO_TRIGGER, GPIO_ECHO):
-    # Set pins as output and input
-#    GPIO.setup(GPIO_TRIGGER, GPIO.OUT)  # Trigger
-#    GPIO.setup(GPIO_ECHO, GPIO.IN)  # Echo
-    # This function measures a distance
+    ##
+    # Documentation for method
+    # <b>simple_measure(int:pin ,int:pin)</b>
+    #Vollführt eine einfache Messung über einen Schallabstandssensorr auf angegebenen Pins.
+    #Dabei wird eine Signal vom Trigger ausgestoßen, einen kurzen Moment gewartet unf dann der Zeitabstand bis zum reflektierten Eingang des Signals abgewartet.
+    #Aus diesem Wert wird dann der Abstand in cm berechnet.
+    #*Formel*: Abstand = (Zeitunterschied * Schallgeschwindigkeit)/2
     GPIO.output(GPIO_TRIGGER, GPIO.HIGH)
-    # Wait 10us
     time.sleep(0.00001)
     GPIO.output(GPIO_TRIGGER, GPIO.LOW)
     start = time.time()
 
     while True:
-       if GPIO.input(GPIO_ECHO) == 0:
-           start = time.time()
-           time.sleep(0.01)
-       if GPIO.input(GPIO_ECHO) == 1:
-           stop = time.time()
-           elapsed = stop - start
-           distance = (elapsed * speedSound) / 2
-           break
+        if GPIO.input(GPIO_ECHO) == 0:
+            start = time.time()
+            time.sleep(0.01)
+        if GPIO.input(GPIO_ECHO) == 1:
+            stop = time.time()
+            elapsed = stop - start
+            distance = (elapsed * speedSound) / 2
+            break
     return distance
 
 

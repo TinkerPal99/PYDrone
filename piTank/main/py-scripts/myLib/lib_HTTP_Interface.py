@@ -1,7 +1,7 @@
 # coding=utf-8
 ## @package Libraries
 #
-# <h4>Documentation for this library <u>datawork</u>.</h4>
+# <h4>Documentation for this library <u>lib_HTTP_Interface.py</u>.</h4>
 #
 # <p>
 # <h5><i>Zweck</i>:</h5> Restaufrufe <br>
@@ -15,12 +15,19 @@
 #
 #
 #_____________________________________________________________________________________________________________
+
 #! usr/bin/env/python
 import httplib
 import time
 
 
 def request():
+    ##
+    # Documentation for method.
+    #
+    # <b>request(_)</b>
+    #!WIP!
+    # schickt Anfrage an Adresse
     valid_request = False
     try:
         conn = httplib.HTTPConnection("www.muster.de")
@@ -38,6 +45,12 @@ def request():
 
 
 def check_payment():
+    ##
+    # Documentation for method.
+    #!WIP!
+    # <b>check_payment(_)</b>
+    #!WIP!
+    # schickt Anfrage an Adresse, überprüft einen Wert und gibt boolean als return-Wert
     got_payment = False
     try:
         conn = httplib.HTTPConnection("paymentadress")

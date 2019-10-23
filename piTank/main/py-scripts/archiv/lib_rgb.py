@@ -1,6 +1,24 @@
 # coding=utf-8
-## @package Libraries
-# Documentation for this module.
+## @package archive
+# <h4>Documentation for this library <u>"rgb"</u>.</h4>
+#
+# <p>
+# <h5><i>Zweck</i>:</h5> Betreiben verschiedener zweipoliger Signallampen <br>
+# <h5><i>Inhalt</i>:</h5>
+# !WIP!
+# <table><tr>Methoden:
+# <td>clean(int:pin ,int:pin, int:pin)</td>
+# <td>light(int:pin ,int:pin, int:pin)</td>
+# <td>blink_left(int:pin ,int:pin, int:pin)</td>
+# <td>bl(int:pin ,int:pin, int:pin)</td>
+# <td>br(int:pi, int:pi)</td>
+# <tr></table>
+# <p>
+#<br><br>
+#
+
+#_____________________________________________________________________________________________________________
+
 
 #! usr/bin/env/python
 import time

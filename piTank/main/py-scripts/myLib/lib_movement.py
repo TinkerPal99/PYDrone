@@ -1,7 +1,7 @@
 # coding=utf-8
 ## @package Libraries
 #
-# <h4>Documentation for this library <u>movement</u>.</h4>
+# <h4>Documentation for this library <u>lib_movement.py</u>.</h4>
 #
 # <p>
 # <h5><i>Zweck</i>:</h5> Betreiben einer H-Brücke für Motorsteuerung <br>
@@ -16,7 +16,6 @@
 # <p>
 #<br><br>
 #
-
 #_____________________________________________________________________________________________________________
 
 #! usr/bin/env/python
@@ -28,6 +27,12 @@ GPIO.setmode(GPIO.BOARD)
 
 
 def wheel_left_FORWARD(lampA, port3, port4):
+    ##
+    # Documentation for method.
+    #
+    # <b>wheel_left_FORWARD(int:pin, int:pin, int:pin)</b>
+    #
+    # Lässt das angeschlossene Rad gen port3 (vorwärts) drehen.
     GPIO.output(port3, GPIO.HIGH)
     GPIO.output(port4, GPIO.LOW)
 
@@ -36,6 +41,12 @@ def wheel_left_FORWARD(lampA, port3, port4):
 
 
 def wheel_left_BACKWARD(lampA, port3, port4):
+    ##
+    # Documentation for method.
+    #
+    # <b>wheel_left_BACKWARD(int:pin, int:pin, int:pin)</b>
+    #
+    # Lässt das angeschlossene Rad gen port4 (rückwärts) drehen.
     GPIO.output(port3, GPIO.LOW)
     GPIO.output(port4, GPIO.HIGH)
 
@@ -44,6 +55,12 @@ def wheel_left_BACKWARD(lampA, port3, port4):
 
 
 def wheel_right_FORWARD(lampB, port1, port2):
+    ##
+    # Documentation for method.
+    #
+    # <b>wheel_right_FORWARD(int:pin, int:pin, int:pin)</b>
+    #
+    # Lässt das angeschlossene Rad gen port1 (vorwärts) drehen.
     GPIO.output(port1, GPIO.HIGH)
     GPIO.output(port2, GPIO.LOW)
 
@@ -52,6 +69,12 @@ def wheel_right_FORWARD(lampB, port1, port2):
 
 
 def wheel_right_BACKWARD(lampB, port1, port2):
+    ##
+    # Documentation for method.
+    #
+    # <b>wheel_right_BACKWARD(int:pin, int:pin, int:pin)</b>
+    #
+    # Lässt das angeschlossene Rad gen port2 (rückwärts) drehen.
     GPIO.output(port1, GPIO.LOW)
     GPIO.output(port2, GPIO.HIGH)
 
@@ -60,6 +83,12 @@ def wheel_right_BACKWARD(lampB, port1, port2):
 
 
 def clean(lampA, port1, port2, lampB, port3, port4):
+    ##
+    # Documentation for method.
+    #
+    # <b>clean(int:pin, int:pin, int:pin, int:pin, int:pin, int:pin)</b>
+    #
+    # Schaltet sämtliche angegebenen Pins auf Low.
     GPIO.output(lampA, GPIO.LOW)
     GPIO.output(lampB, GPIO.LOW)
 
@@ -68,8 +97,6 @@ def clean(lampA, port1, port2, lampB, port3, port4):
     GPIO.output(port3, GPIO.LOW)
     GPIO.output(port4, GPIO.LOW)
 
-    #GPIO.output(33, GPIO.LOW)
-    #GPIO.output(31, GPIO.LOW)
     return
 
 

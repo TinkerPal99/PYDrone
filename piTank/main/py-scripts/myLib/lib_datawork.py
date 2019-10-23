@@ -1,7 +1,7 @@
 # coding=utf-8
 ## @package Libraries
 #
-# <h4>Documentation for this library <u>datawork</u>.</h4>
+# <h4>Documentation for this library <u>lib_datawork.py</u>.</h4>
 #
 # <p>
 # <h5><i>Zweck</i>:</h5> Interaktion mit .txt-Files <br>
@@ -19,7 +19,7 @@
 
 # ! usr/bin/env/python
 
-##Documentation for a variable
+##Documentation for a variable "dataname"
 #
 # Diese Variable dient als default für eine angesprochene Datei.
 dataname = "../test.txt"
@@ -28,8 +28,7 @@ dataname = "../test.txt"
 def openAndRead(dataname):
     ##
     # Documentation for method.
-    #
-    # openAndRead(string:dateiname)
+    # <b>openAndRead(string:dateiname)</b>
     #
     # öffnet Datei und liest ihren Inhalt ein. Dieser wird im return-Wert *lines* zurückgegeben.
     f = open(dataname, "r")
@@ -42,7 +41,7 @@ def openAndWrite(dataname, text):
     ##
     # Documentation for method.
     #
-    # openAndWrite(string:dateiname, string:text)
+    # <b>openAndWrite(string:dateiname, string:text)</b>
     #
     # öffnet Datei und liest ihren Inhalt ein. Dieser wird im return-Wert lines zurückgegeben."""
 
