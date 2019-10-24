@@ -1,3 +1,15 @@
+# coding=utf-8
+## @package init
+#
+# <h4>Documentation for this initializer <u>__init__.py</u>.</h4>
+#
+# <p>
+# <h5><i>Zweck</i>:</h5> Sequenzielles Abarbeiten verschiedener Jobs des PiCars anhand der Joblist <br>
+# <h5><i>Inhalt</i>:</h5>
+# <p>
+# <br><br>
+#_______________________________________________________________________________________________________________________
+
 #! usr/bin/env/python
 from __future__ import print_function
 from __future__ import print_function
@@ -51,9 +63,9 @@ def clean():
 
 
 
-#####################################################################################################################
-#################################################_________Hauptprogramm_____________#################################
-#####################################################################################################################
+
+#_________Hauptprogramm_________________________________________________________________________________________________
+
 #print("main")
 wheelright_pwm.start(start_dc)
 wheelleft_pwm.start(start_dc)
