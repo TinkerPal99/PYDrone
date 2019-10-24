@@ -1,9 +1,9 @@
 #! usr/bin/env/python
 import os
 import time
-import RPi.GPIO as GPIO
-GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
+#import RPi.GPIO as GPIO
+#GPIO.setwarnings(False)
+#GPIO.setmode(GPIO.BOARD)
 
 
 if input("Shall we beginn ? 1/0") == 1:
@@ -23,17 +23,15 @@ if input("Shall we beginn ? 1/0") == 1:
 	print("						")
 	print("						")
 	time.sleep(0.2)
-	print ("PiCar...PiDrone - Moeglichkeiten und Anwendungen")
+	print ("PiCar - Das Leben nach dem TestLab")
 	print("						")
 	time.sleep(0.5)
 	#ToDo eSpeak: "Ist das nicht etwas hochtrabend ?"
-	print ("1_Ursprung der Idee")
+	print ("1_Ursprung der Idee und Umsetzung des ersten Prototypen")
 	time.sleep(0.2)
-	print ("2_Umsetzung des ersten Prototypen")
+	print ("2_PiCar bei Sulzer...abseits des TestLab")
 	time.sleep(0.2)
-	print ("3_Umsetzung in anderen Projekten, der nutzen fuer die Firma...")
-	time.sleep(0.2)
-	print ("4_Was da ist und was den da noch kommt")
+	print ("3_Was da ist und was den da noch kommt")
 	#ToDo eSpeak: Oho...ja, eindeutig hochtrabend"
 	time.sleep(0.5)
 	#ToDo eSpeak: Wo ist der Vortragende eingentlich ?

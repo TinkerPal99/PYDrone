@@ -7,7 +7,7 @@
 <body>
 
 	<div id="headOfBody">
-		</img id="logo" src="Bilder/TestLab-Logo_transparent.png" height="115" width="125" ></a>
+		</img id="logo" src="filler" height="115" width="125" ></a>
 		<h1><BLOCKQUOTE><BLOCKQUOTE>---------</BLOCKQUOTE></BLOCKQUOTE> </h1>
 		<h2><BLOCKQUOTE>PiDrone</BLOCKQUOTE></h2>
 	</div>

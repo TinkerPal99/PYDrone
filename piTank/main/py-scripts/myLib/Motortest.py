@@ -1,6 +1,19 @@
 # coding=utf-8
-## @package Libraries
-# Documentation for this module.
+## @package testset
+# <h4>Documentation for this testset <u>Motortest.py</u>.</h4>
+# <br>
+#<p>
+# <h5><i>Zweck</i>:</h5> Abprüfen einzelner Fahrfunktionen <br>
+# <h5><i>Inhalt</i>:</h5>
+# <table><tr>testcases:
+# <td>main(int:Fahranweisung)</td>
+# <td>printPin(_)</td>
+# <tr></table>
+# <p>
+#<br><br>
+#
+#
+#_____________________________________________________________________________________________________________
 
 #! usr/bin/env/python
 import time
@@ -35,9 +48,16 @@ motor1GPIO.start(dc)
 motor2GPIO.start(dc)
 
 
-#############################usecases##########################
-def main():
-    x = 0  # input("Modus: Schnell Fahren(0) Langsam Fahren(1): ")
+#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_usecases_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_
+def main(x):
+    ##
+    # Documentation for this testcase.<br>
+    #
+    # <b>main(int:Fahranweisung)</b><br>
+    #
+    # Lässt das vordefinierten Räder drehen. Der Parameter bestimmt die Geschwindigkeit 0 = Schnell, 1 = Langsam.
+
+    #x = input("Modus: Schnell Fahren(0) Langsam Fahren(1): ")
 
     if x == 0:
         print ("Start rechts rueckwaerts")
@@ -53,6 +73,12 @@ def main():
 
 
 def printPin():
+    ##
+    # Documentation for this testcase.<br>
+    #
+    # <b>printPin(_)</b><br>
+    #
+    # Lässt das vordefinierten Pins einmal auf die Ausgabe geben.
     print ("enable A: " + str(enableA))
     print ("port 1: " + str(port1))
     print ("port 2: " + str(port2))
@@ -62,7 +88,7 @@ def printPin():
     print ("port 4: " + str(port4))
 
 
-############################testplan####################
+#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_testplan_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#
 main()
 # printPin()
 motor1GPIO.stop()

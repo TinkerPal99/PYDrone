@@ -1,7 +1,7 @@
-# PYDrone
-Repository for Pydrone Project, running on RPI, coded in Python
-Author : TinkerPal99
-Start of project on github: 12.10.2019
+# PYDrone V1.0
+Repository for Pydrone Project, running on RPI, coded in Python <br>
+Author : TinkerPal99 <br>
+Start of project on github: 12.10.2019 <br>
 Contributors:
 
 __*Summary*__
@@ -11,15 +11,17 @@ __*Summary*__
 
 
 __First things First__
-This is a control-software, build to control different Drones, Rovers and things alike.
-The blue-prints for these devices aren't online now and probably never will. 
 
-The actual __init__ can be found in main/py-scripts
-The webinterface can be found in main, called Index.php
+Dies ist eine Kontrollsoftware für verschiedene Dronen, Rover und ähnliches. Basierend auf einem RPI, und proghrammeirt in Python.
+Die tatsächliche init can unter main/py-scripts gefunden werden.
+Das Webinterfacecan in /main gefunden werden und heißt Index.php.
+
 
 __Preparation__
-For using the webinterface you need a php-runner.
+
+Für die Nutzung des Webinterface benötigt das Pi php und apache. Setup wird erstellt.
 
 __Important informations__
 
-In the moment I am trying to rrebuild the whole system oop, first try can be found in main/py-scripts/PiTank.py and autonomousDrive.py
+
+Im Moment versuche ich das ganze objektorientiert neu aufzubauen, erste Versuche können in main/py-scripts/PiTank.py und autonomousDrive.py gefunden werden.
