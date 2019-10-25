@@ -1,0 +1,88 @@
+.TH "py-scripts.autonmousDrive" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+py-scripts.autonmousDrive
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBenableA\fP = 36"
+.br
+.ti -1c
+.RI "int \fBenableB\fP = 32"
+.br
+.ti -1c
+.RI "int \fBport1\fP = 40"
+.br
+.ti -1c
+.RI "int \fBport2\fP = 38"
+.br
+.ti -1c
+.RI "int \fBport3\fP = 35"
+.br
+.ti -1c
+.RI "int \fBport4\fP = 37"
+.br
+.ti -1c
+.RI "int \fBlampA\fP = 33"
+.br
+.ti -1c
+.RI "int \fBlampB\fP = 31"
+.br
+.ti -1c
+.RI "int \fBGPIO_TRIGGER\fP = 16"
+.br
+.ti -1c
+.RI "int \fBGPIO_ECHO\fP = 18"
+.br
+.ti -1c
+.RI "int \fBdistance_forward\fP = 10"
+.br
+.ti -1c
+.RI "\fBpiTank\fP = \fBPiTank\fP(\fBenableA\fP, \fBenableB\fP, 100, \fBport1\fP, \fBport2\fP, \fBport3\fP, \fBport4\fP)"
+.br
+.RI "\fISetup\fP############################################################### "
+.ti -1c
+.RI "\fBdistance\fP = int(lib_distance\&.measure_average_of_3(\fBGPIO_TRIGGER\fP, \fBGPIO_ECHO\fP))"
+.br
+.RI "_Start_of_Main######################################################### "
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "py\-scripts\&.autonmousDrive\&.distance = int(lib_distance\&.measure_average_of_3(\fBGPIO_TRIGGER\fP, \fBGPIO_ECHO\fP))"
+
+.PP
+_Start_of_Main######################################################### 
+.SS "int py\-scripts\&.autonmousDrive\&.distance_forward = 10"
+
+.SS "int py\-scripts\&.autonmousDrive\&.enableA = 36"
+
+.SS "int py\-scripts\&.autonmousDrive\&.enableB = 32"
+
+.SS "int py\-scripts\&.autonmousDrive\&.GPIO_ECHO = 18"
+
+.SS "int py\-scripts\&.autonmousDrive\&.GPIO_TRIGGER = 16"
+
+.SS "int py\-scripts\&.autonmousDrive\&.lampA = 33"
+
+.SS "int py\-scripts\&.autonmousDrive\&.lampB = 31"
+
+.SS "py\-scripts\&.autonmousDrive\&.piTank = \fBPiTank\fP(\fBenableA\fP, \fBenableB\fP, 100, \fBport1\fP, \fBport2\fP, \fBport3\fP, \fBport4\fP)"
+
+.PP
+\fISetup\fP############################################################### \fBSetting Object\fP#################################################### 
+.SS "int py\-scripts\&.autonmousDrive\&.port1 = 40"
+
+.SS "int py\-scripts\&.autonmousDrive\&.port2 = 38"
+
+.SS "int py\-scripts\&.autonmousDrive\&.port3 = 35"
+
+.SS "int py\-scripts\&.autonmousDrive\&.port4 = 37"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

@@ -1,0 +1,107 @@
+.TH "Libraries" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Libraries
+.SH SYNOPSIS
+.br
+.PP
+.SH "Detailed Description"
+.PP 
+Documentation for this module\&.
+.PP
+.SS "Documentation for this library \fIdatawork\fP\&."
+.PP
+.SS "\fIZweck\fP:"
+.PP
+Interaktion mit \&.txt-Files 
+.br
+ 
+.SS "\fIInhalt\fP:"
+.PP
+.PP
+openAndRead(string:Dateiname) 
+.PP
+openAndWrite(string:Dateiname, string:text) 
+.PP
+
+.br
+
+.br
+.PP
+Grundlage dafür ist: \fCpython-kurs\&.eu\fP
+.PP
+.PP
+.PP
+.SS "Documentation for this library \fIdistance\fP\&."
+.PP
+.SS "\fIZweck\fP:"
+.PP
+Methoden zur Anbindung eines schallbasierten 4-Pin Abstandssensor 
+.br
+ 
+.SS "\fIInhalt\fP:"
+.PP
+.PP
+simple_measure(int:pin ,int:pin) 
+.PP
+measure_average_of_3(int:pin ,int:pin) 
+.PP
+measure_average_of_x(int:Anzahl der Wiederholungen, int:pin, int:pin) 
+.PP
+printSettings(_) 
+.PP
+print_formattedMeasure(int:pin, int:pin) 
+.PP
+.PP
+.PP
+.SS "Documentation for this library \fIdatawork\fP\&."
+.PP
+.SS "\fIZweck\fP:"
+.PP
+Restaufrufe 
+.br
+ 
+.SS "\fIInhalt\fP:"
+.PP
+.PP
+request(_) 
+.PP
+ckeck_payment(non_functional) 
+.PP
+
+.br
+
+.br
+.PP
+.PP
+ ! usr/bin/env/python
+.PP
+.SS "Documentation for this library \fImovement\fP\&."
+.PP
+.SS "\fIZweck\fP:"
+.PP
+Betreiben einer H-Brücke für Motorsteuerung 
+.br
+ 
+.SS "\fIInhalt\fP:"
+.PP
+.PP
+wheel_left_forward(int:pin ,int:pin, int:pin) 
+.PP
+wheel_right_forward(int:pin ,int:pin, int:pin) 
+.PP
+wheel_left_backward(int:pin ,int:pin, int:pin) 
+.PP
+wheel_right_backward(int:pin ,int:pin, int:pin) 
+.PP
+clean(int:pi, int:pi, int:pi, int:pi, int:pi, int:pi) 
+.PP
+
+.br
+
+.br
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

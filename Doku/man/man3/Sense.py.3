@@ -1,0 +1,61 @@
+.TH "C:/Users/eising/Desktop/git2_2/pydrone/PYDrone/piTank/main/py-scripts/archiv/Sense.py" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/eising/Desktop/git2_2/pydrone/PYDrone/piTank/main/py-scripts/archiv/Sense.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBSense\fP"
+.br
+.ti -1c
+.RI " \fBarchive\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBSense\&.sensor\fP = Adafruit_DHT\&.DHT22"
+.br
+.ti -1c
+.RI "int \fBSense\&.gpio\fP = 4"
+.br
+.ti -1c
+.RI "\fBSense\&.dateTimeObj\fP = datetime\&.now()"
+.br
+.ti -1c
+.RI "\fBSense\&.datestamp\fP = dateTimeObj\&.strftime('%Y\-%m\-%d')"
+.br
+.ti -1c
+.RI "int \fBSense\&.h\fP = 0"
+.br
+.ti -1c
+.RI "int \fBSense\&.z\fP = 0"
+.br
+.ti -1c
+.RI "int \fBSense\&.e\fP = 0"
+.br
+.ti -1c
+.RI "\fBSense\&.f\fP = open('\&.\&./senselog\&.txt', 'a+')"
+.br
+.ti -1c
+.RI "\fBSense\&.timestamp\fP = dateTimeObj\&.strftime('(%H:%M)')"
+.br
+.ti -1c
+.RI "\fBSense\&.humidity\fP"
+.br
+.ti -1c
+.RI "\fBSense\&.temperature\fP"
+.br
+.ti -1c
+.RI "string \fBSense\&.a\fP = str(h)+str(z)+str(e) + '|' + timestamp + ' | ' + ' {0:0\&.1f}*C {1:0\&.1f}%'\&.format(temperature,humidity)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

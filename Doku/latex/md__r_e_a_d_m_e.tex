@@ -1,0 +1,48 @@
+{\bfseries{Repository for Pydrone Project, running on R\+PI, coded in Python}} ~\newline
+ {\bfseries{Author \+:}} Tinker\+Pal99 ~\newline
+ {\bfseries{Start of project on github\+:}} 12.\+10.\+2019 ~\newline
+ Contributors\+:
+
+{\bfseries{{\itshape Summary}}}
+\begin{DoxyEnumerate}
+\item First things First
+\item Preparation
+\item Important informations
+\end{DoxyEnumerate}
+
+{\bfseries{First things First}}
+
+Dies ist eine Kontrollsoftware für verschiedene Dronen, Rover und ähnliches. Basierend auf einem R\+PI, und programmiert in Python. Die tatsächliche init kann unter {\itshape main/py-\/scripts} gefunden werden. Das Webinterface kann in \+\_\+/main\+\_\+ gefunden werden und heißt {\itshape Index.\+php}.
+
+{\bfseries{Preparation}}
+
+Für die Nutzung des Webinterface benötigt das Pi php und apache. Setup wird erstellt.
+
+{\bfseries{Für Apache und P\+HP}}
+
+
+\begin{DoxyEnumerate}
+\item sudo apt-\/get install apache2
+\item sudo apt-\/get install -\/t stretch php7.\+0 php7.\+0-\/curl php7.\+0-\/gd php7.\+0-\/fpm php7.\+0-\/cli php7.\+0-\/opcache php7.\+0-\/json php7.\+0-\/mbstring php7.\+0-\/xml php7.\+0-\/zip php7.\+0-\/mysql -\/y
+\item sudo apt-\/get install -\/t stretch libapache2-\/mod-\/php7.\+0 -\/y
+\end{DoxyEnumerate}
+
+{\bfseries{Für Anbindung der library für D\+H\+T11 und D\+H\+T22 (Temperatur-\/\&Luftfeuchtigkeitssensor)}}
+
+
+\begin{DoxyEnumerate}
+\item sudo apt-\/get install build-\/essential python-\/dev python-\/openssl git
+\item git clone \href{https://github.com/adafruit/Adafruit_Python_DHT.git}{\texttt{ https\+://github.\+com/adafruit/\+Adafruit\+\_\+\+Python\+\_\+\+D\+H\+T.\+git}} \&\& cd Adafruit\+\_\+\+Python\+\_\+\+D\+HT
+\item sudo python setup.\+py install
+\end{DoxyEnumerate}
+
+{\bfseries{Webinterface Schreibrechte erteilen}}
+
+Und damit das Webinterface in die Joblist schreiben und Zertifikate erstellen kann, müssen die entsprechenden Teile für den www-\/user freigegeben werden, beispielsweise so\+:
+\begin{DoxyEnumerate}
+\item sudo chown -\/r -\/s www-\/data /var/www/html/$\ast$
+\end{DoxyEnumerate}
+
+{\bfseries{Important informations}}
+
+Im Moment versuche ich das ganze objektorientiert neu aufzubauen, erste Versuche können in {\itshape main/py-\/scripts/\+Pi\+Tank.\+py} und {\itshape autonomous\+Drive.\+py} gefunden werden. 

@@ -1,0 +1,120 @@
+\hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive}{}\doxysection{P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive Namespace Reference}
+\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive}\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a83d19805342b530a8b00d18bb7fa9b26}{enableA}} = 36
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_abd745dfaf5cc1649a6efc937c9e797a2}{enableB}} = 32
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a4e4416af6c199210617cad9fd217d869}{port1}} = 40
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_acae8ce95330b3bb7edcfebd615b0bf51}{port2}} = 38
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_ae79b8d9a3199549796e510d11ca7d89e}{port3}} = 35
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a08c3ad123174bb5d6a45dbb381d2b6ba}{port4}} = 37
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a626598e3ad2ba2ed4643f56023939398}{lampA}} = 33
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a3cdf35dd27cd4b3cc19548334fff33b0}{lampB}} = 31
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_adc39a4766884fa66fcbc2833b4ea709b}{G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER}} = 16
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_afb6d55a6ce1159a7a0926b2af0881cf1}{G\+P\+I\+O\+\_\+\+E\+C\+HO}} = 18
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_aedf878a0547d42722469e49b6a453d65}{distance\+\_\+forward}} = 10
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a19cca781d52f2deb3a60dc3ff583471c}{pi\+Tank}} = \mbox{\hyperlink{class_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1my_lib_1_1class___pi_tank_1_1_pi_tank}{Pi\+Tank}}(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a83d19805342b530a8b00d18bb7fa9b26}{enableA}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_abd745dfaf5cc1649a6efc937c9e797a2}{enableB}}, 100, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a4e4416af6c199210617cad9fd217d869}{port1}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_acae8ce95330b3bb7edcfebd615b0bf51}{port2}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_ae79b8d9a3199549796e510d11ca7d89e}{port3}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a08c3ad123174bb5d6a45dbb381d2b6ba}{port4}})
+\begin{DoxyCompactList}\small\item\em {\itshape Setup}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a41a826c9fced459042c7dd14c7b5a279}{distance}} = int(lib\+\_\+distance.\+measure\+\_\+average\+\_\+of\+\_\+3(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_adc39a4766884fa66fcbc2833b4ea709b}{G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_afb6d55a6ce1159a7a0926b2af0881cf1}{G\+P\+I\+O\+\_\+\+E\+C\+HO}}))
+\begin{DoxyCompactList}\small\item\em \+\_\+\+Start\+\_\+of\+\_\+\+Main\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a41a826c9fced459042c7dd14c7b5a279}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a41a826c9fced459042c7dd14c7b5a279}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!distance@{distance}}
+\index{distance@{distance}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+distance = int(lib\+\_\+distance.\+measure\+\_\+average\+\_\+of\+\_\+3(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_adc39a4766884fa66fcbc2833b4ea709b}{G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_afb6d55a6ce1159a7a0926b2af0881cf1}{G\+P\+I\+O\+\_\+\+E\+C\+HO}}))}
+
+
+
+\+\_\+\+Start\+\_\+of\+\_\+\+Main\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# 
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_aedf878a0547d42722469e49b6a453d65}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_aedf878a0547d42722469e49b6a453d65}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!distance\_forward@{distance\_forward}}
+\index{distance\_forward@{distance\_forward}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{distance\_forward}{distance\_forward}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+distance\+\_\+forward = 10}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a83d19805342b530a8b00d18bb7fa9b26}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a83d19805342b530a8b00d18bb7fa9b26}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!enableA@{enableA}}
+\index{enableA@{enableA}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{enableA}{enableA}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+enableA = 36}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_abd745dfaf5cc1649a6efc937c9e797a2}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_abd745dfaf5cc1649a6efc937c9e797a2}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!enableB@{enableB}}
+\index{enableB@{enableB}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{enableB}{enableB}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+enableB = 32}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_afb6d55a6ce1159a7a0926b2af0881cf1}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_afb6d55a6ce1159a7a0926b2af0881cf1}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!GPIO\_ECHO@{GPIO\_ECHO}}
+\index{GPIO\_ECHO@{GPIO\_ECHO}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ECHO}{GPIO\_ECHO}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+G\+P\+I\+O\+\_\+\+E\+C\+HO = 18}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_adc39a4766884fa66fcbc2833b4ea709b}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_adc39a4766884fa66fcbc2833b4ea709b}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!GPIO\_TRIGGER@{GPIO\_TRIGGER}}
+\index{GPIO\_TRIGGER@{GPIO\_TRIGGER}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{GPIO\_TRIGGER}{GPIO\_TRIGGER}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER = 16}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a626598e3ad2ba2ed4643f56023939398}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a626598e3ad2ba2ed4643f56023939398}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!lampA@{lampA}}
+\index{lampA@{lampA}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{lampA}{lampA}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+lampA = 33}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a3cdf35dd27cd4b3cc19548334fff33b0}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a3cdf35dd27cd4b3cc19548334fff33b0}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!lampB@{lampB}}
+\index{lampB@{lampB}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{lampB}{lampB}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+lampB = 31}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a19cca781d52f2deb3a60dc3ff583471c}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a19cca781d52f2deb3a60dc3ff583471c}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!piTank@{piTank}}
+\index{piTank@{piTank}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{piTank}{piTank}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+pi\+Tank = \mbox{\hyperlink{class_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1my_lib_1_1class___pi_tank_1_1_pi_tank}{Pi\+Tank}}(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a83d19805342b530a8b00d18bb7fa9b26}{enableA}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_abd745dfaf5cc1649a6efc937c9e797a2}{enableB}}, 100, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a4e4416af6c199210617cad9fd217d869}{port1}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_acae8ce95330b3bb7edcfebd615b0bf51}{port2}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_ae79b8d9a3199549796e510d11ca7d89e}{port3}}, \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a08c3ad123174bb5d6a45dbb381d2b6ba}{port4}})}
+
+
+
+{\itshape Setup}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# 
+
+{\bfseries{Setting Object}}\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\# \mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a4e4416af6c199210617cad9fd217d869}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a4e4416af6c199210617cad9fd217d869}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!port1@{port1}}
+\index{port1@{port1}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{port1}{port1}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+port1 = 40}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_acae8ce95330b3bb7edcfebd615b0bf51}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_acae8ce95330b3bb7edcfebd615b0bf51}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!port2@{port2}}
+\index{port2@{port2}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{port2}{port2}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+port2 = 38}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_ae79b8d9a3199549796e510d11ca7d89e}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_ae79b8d9a3199549796e510d11ca7d89e}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!port3@{port3}}
+\index{port3@{port3}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{port3}{port3}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+port3 = 35}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a08c3ad123174bb5d6a45dbb381d2b6ba}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1autonmous_drive_a08c3ad123174bb5d6a45dbb381d2b6ba}} 
+\index{PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}!port4@{port4}}
+\index{port4@{port4}!PYDrone.piTank.main.py-\/scripts.autonmousDrive@{PYDrone.piTank.main.py-\/scripts.autonmousDrive}}
+\doxysubsubsection{\texorpdfstring{port4}{port4}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+autonmous\+Drive.\+port4 = 37}
+

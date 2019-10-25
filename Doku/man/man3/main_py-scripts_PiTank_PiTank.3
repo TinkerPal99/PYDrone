@@ -1,0 +1,217 @@
+.TH "main.py-scripts.PiTank.PiTank" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.py-scripts.PiTank.PiTank
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBenableA\fP, \fBenableB\fP, maximum_pulse, \fBport1\fP, \fBport2\fP, \fBport3\fP, \fBport4\fP)"
+.br
+.ti -1c
+.RI "def \fBset_lamp\fP (self, \fBlampA\fP, \fBlampB\fP)"
+.br
+.ti -1c
+.RI "def \fBset_Forward_Sensor\fP (self, GPIO_TRIGGER, GPIO_ECHO)"
+.br
+.ti -1c
+.RI "def \fBset_Backward_Sensor\fP (self, GPIO_TRIGGER, GPIO_ECHO)"
+.br
+.ti -1c
+.RI "def \fBprint_Sensor\fP (self)"
+.br
+.ti -1c
+.RI "def \fBprint_motor_h\fP (self)"
+.br
+.ti -1c
+.RI "def \fBvehicle_drive\fP (self, direction)"
+.br
+.ti -1c
+.RI "def \fBstart_pwm\fP (self, startpulse)"
+.br
+.ti -1c
+.RI "def \fBchange_pwm\fP (self, changepulse_right, changepulse_left)"
+.br
+.ti -1c
+.RI "def \fBstop_pwm\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBwheelleft_pwm\fP"
+.br
+.ti -1c
+.RI "\fBwheelright_pwm\fP"
+.br
+.ti -1c
+.RI "\fBenableA\fP"
+.br
+.ti -1c
+.RI "\fBenableB\fP"
+.br
+.ti -1c
+.RI "\fBport1\fP"
+.br
+.ti -1c
+.RI "\fBport2\fP"
+.br
+.ti -1c
+.RI "\fBport3\fP"
+.br
+.ti -1c
+.RI "\fBport4\fP"
+.br
+.ti -1c
+.RI "\fBlampA\fP"
+.br
+.ti -1c
+.RI "\fBlampB\fP"
+.br
+.ti -1c
+.RI "\fBGPIO_TRIGGER_FORWARD\fP"
+.br
+.ti -1c
+.RI "\fBGPIO_ECHO_FORWARD\fP"
+.br
+.ti -1c
+.RI "\fBGPIO_TRIGGER_BACKWARD\fP"
+.br
+.ti -1c
+.RI "\fBGPIO_ECHO_BACKWARD\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBenableA\fP = 1"
+.br
+.ti -1c
+.RI "int \fBenableB\fP = 1"
+.br
+.ti -1c
+.RI "int \fBport1\fP = 1"
+.br
+.ti -1c
+.RI "int \fBport2\fP = 1"
+.br
+.ti -1c
+.RI "int \fBport3\fP = 1"
+.br
+.ti -1c
+.RI "int \fBport4\fP = 1"
+.br
+.ti -1c
+.RI "int \fBlampA\fP = 1"
+.br
+.ti -1c
+.RI "int \fBlampB\fP = 1"
+.br
+.ti -1c
+.RI "int \fBGPIO_TRIGGER_FORWARD\fP = 1"
+.br
+.ti -1c
+.RI "int \fBGPIO_ECHO_FORWARD\fP = 1"
+.br
+.ti -1c
+.RI "int \fBGPIO_ECHO_BACKWARD\fP = 1"
+.br
+.ti -1c
+.RI "int \fBGPIO_TRIGGER_BACKWARD\fP = 1"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.__init__ ( self,  enableA,  enableB,  maximum_pulse,  port1,  port2,  port3,  port4)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.change_pwm ( self,  changepulse_right,  changepulse_left)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.print_motor_h ( self)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.print_Sensor ( self)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.set_Backward_Sensor ( self,  GPIO_TRIGGER,  GPIO_ECHO)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.set_Forward_Sensor ( self,  GPIO_TRIGGER,  GPIO_ECHO)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.set_lamp ( self,  lampA,  lampB)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.start_pwm ( self,  startpulse)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.stop_pwm ( self)"
+
+.SS "def main\&.py\-scripts\&.PiTank\&.PiTank\&.vehicle_drive ( self,  direction)"
+
+.PP
+.nf
+:type direction: string forward, backward, stop, leftturn, rightturn
+
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.enableA = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.enableA"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.enableB = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.enableB"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_ECHO_BACKWARD = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_ECHO_BACKWARD"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_ECHO_FORWARD = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_ECHO_FORWARD"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_TRIGGER_BACKWARD = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_TRIGGER_BACKWARD"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_TRIGGER_FORWARD = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.GPIO_TRIGGER_FORWARD"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.lampA = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.lampA"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.lampB = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.lampB"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.port1 = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.port1"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.port2 = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.port2"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.port3 = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.port3"
+
+.SS "int main\&.py\-scripts\&.PiTank\&.PiTank\&.port4 = 1\fC [static]\fP"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.port4"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.wheelleft_pwm"
+
+.SS "main\&.py\-scripts\&.PiTank\&.PiTank\&.wheelright_pwm"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

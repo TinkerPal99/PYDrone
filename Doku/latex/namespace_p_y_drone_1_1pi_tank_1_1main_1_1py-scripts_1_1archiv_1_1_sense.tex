@@ -1,0 +1,104 @@
+\hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense}{}\doxysection{P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense Namespace Reference}
+\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense}\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_aaa8aba58eca73fc6a41dc5404586a476}{sensor}} = Adafruit\+\_\+\+D\+H\+T.\+D\+H\+T22
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a0091a023f1e4c844c837252ab5e3862a}{gpio}} = 4
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a66c277e1a2dc6c5156f30ed40b639010}{date\+Time\+Obj}} = datetime.\+now()
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a928adf13c8815b0cb315ebe209973c76}{datestamp}} = date\+Time\+Obj.\+strftime(\char`\"{}\%Y-\/\%m-\/\%d\char`\"{})
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a14209acbb259aa873ac3ef5107a4aafc}{h}} = 0
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac5e06310f1f9dde577dad0a9a3cff624}{z}} = 0
+\item 
+int \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a5630a98adbbf9e78ddf42641ed49a10b}{e}} = 0
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}{f}} = open(\char`\"{}../senselog.\+txt\char`\"{}, \char`\"{}\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a2dbf3971cd28963e5c88f8cd3778d46f}{a}}+\char`\"{})
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac692c8dbdc03c745d7827f7c74e87148}{timestamp}} = date\+Time\+Obj.\+strftime(\char`\"{}(\%H\+:\%M)\char`\"{})
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a736163cbb9f4cc5d95f183c9f6472355}{humidity}}
+\item 
+\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a32e056b7e6fc428d3cb5ed61fdc74c1e}{temperature}}
+\item 
+string \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a2dbf3971cd28963e5c88f8cd3778d46f}{a}} = str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a14209acbb259aa873ac3ef5107a4aafc}{h}})+str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac5e06310f1f9dde577dad0a9a3cff624}{z}})+str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a5630a98adbbf9e78ddf42641ed49a10b}{e}}) + \char`\"{}$\vert$\char`\"{} + \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac692c8dbdc03c745d7827f7c74e87148}{timestamp}} + \char`\"{} $\vert$ \char`\"{} + \textquotesingle{} \{0\+:0.\+1\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}{f}}\}$\ast$C \{1\+:0.\+1\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}{f}}\}\%\textquotesingle{}.format(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a32e056b7e6fc428d3cb5ed61fdc74c1e}{temperature}},\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a736163cbb9f4cc5d95f183c9f6472355}{humidity}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a2dbf3971cd28963e5c88f8cd3778d46f}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a2dbf3971cd28963e5c88f8cd3778d46f}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!a@{a}}
+\index{a@{a}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily string P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+a = str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a14209acbb259aa873ac3ef5107a4aafc}{h}})+str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac5e06310f1f9dde577dad0a9a3cff624}{z}})+str(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a5630a98adbbf9e78ddf42641ed49a10b}{e}}) + \char`\"{}$\vert$\char`\"{} + \mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac692c8dbdc03c745d7827f7c74e87148}{timestamp}} + \char`\"{} $\vert$ \char`\"{} + \textquotesingle{} \{0\+:0.\+1\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}{f}}\}$\ast$C \{1\+:0.\+1\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}{f}}\}\%\textquotesingle{}.format(\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a32e056b7e6fc428d3cb5ed61fdc74c1e}{temperature}},\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a736163cbb9f4cc5d95f183c9f6472355}{humidity}})}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a928adf13c8815b0cb315ebe209973c76}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a928adf13c8815b0cb315ebe209973c76}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!datestamp@{datestamp}}
+\index{datestamp@{datestamp}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{datestamp}{datestamp}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+datestamp = date\+Time\+Obj.\+strftime(\char`\"{}\%Y-\/\%m-\/\%d\char`\"{})}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a66c277e1a2dc6c5156f30ed40b639010}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a66c277e1a2dc6c5156f30ed40b639010}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!dateTimeObj@{dateTimeObj}}
+\index{dateTimeObj@{dateTimeObj}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{dateTimeObj}{dateTimeObj}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+date\+Time\+Obj = datetime.\+now()}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a5630a98adbbf9e78ddf42641ed49a10b}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a5630a98adbbf9e78ddf42641ed49a10b}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!e@{e}}
+\index{e@{e}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+e = 0}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a9e3c843f5032ffc1e649443566cdfaef}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!f@{f}}
+\index{f@{f}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+f = open(\char`\"{}../senselog.\+txt\char`\"{}, \char`\"{}\mbox{\hyperlink{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a2dbf3971cd28963e5c88f8cd3778d46f}{a}}+\char`\"{})}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a0091a023f1e4c844c837252ab5e3862a}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a0091a023f1e4c844c837252ab5e3862a}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!gpio@{gpio}}
+\index{gpio@{gpio}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{gpio}{gpio}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+gpio = 4}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a14209acbb259aa873ac3ef5107a4aafc}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a14209acbb259aa873ac3ef5107a4aafc}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!h@{h}}
+\index{h@{h}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+h = 0}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a736163cbb9f4cc5d95f183c9f6472355}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a736163cbb9f4cc5d95f183c9f6472355}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!humidity@{humidity}}
+\index{humidity@{humidity}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{humidity}{humidity}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+humidity}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_aaa8aba58eca73fc6a41dc5404586a476}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_aaa8aba58eca73fc6a41dc5404586a476}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!sensor@{sensor}}
+\index{sensor@{sensor}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+sensor = Adafruit\+\_\+\+D\+H\+T.\+D\+H\+T22}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a32e056b7e6fc428d3cb5ed61fdc74c1e}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_a32e056b7e6fc428d3cb5ed61fdc74c1e}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!temperature@{temperature}}
+\index{temperature@{temperature}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+temperature}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac692c8dbdc03c745d7827f7c74e87148}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac692c8dbdc03c745d7827f7c74e87148}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+timestamp = date\+Time\+Obj.\+strftime(\char`\"{}(\%H\+:\%M)\char`\"{})}
+
+\mbox{\Hypertarget{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac5e06310f1f9dde577dad0a9a3cff624}\label{namespace_p_y_drone_1_1pi_tank_1_1main_1_1py-scripts_1_1archiv_1_1_sense_ac5e06310f1f9dde577dad0a9a3cff624}} 
+\index{PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}!z@{z}}
+\index{z@{z}!PYDrone.piTank.main.py-\/scripts.archiv.Sense@{PYDrone.piTank.main.py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily int P\+Y\+Drone.\+pi\+Tank.\+main.\+py-\/scripts.\+archiv.\+Sense.\+z = 0}
+

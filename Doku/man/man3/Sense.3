@@ -1,0 +1,77 @@
+.TH "Sense" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sense
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBsensor\fP = Adafruit_DHT\&.DHT22"
+.br
+.ti -1c
+.RI "int \fBgpio\fP = 4"
+.br
+.ti -1c
+.RI "\fBdateTimeObj\fP = datetime\&.now()"
+.br
+.ti -1c
+.RI "\fBdatestamp\fP = dateTimeObj\&.strftime('%Y\-%m\-%d')"
+.br
+.ti -1c
+.RI "int \fBh\fP = 0"
+.br
+.ti -1c
+.RI "int \fBz\fP = 0"
+.br
+.ti -1c
+.RI "int \fBe\fP = 0"
+.br
+.ti -1c
+.RI "\fBf\fP = open('\&.\&./senselog\&.txt', '\fBa\fP+')"
+.br
+.ti -1c
+.RI "\fBtimestamp\fP = dateTimeObj\&.strftime('(%H:%M)')"
+.br
+.ti -1c
+.RI "\fBhumidity\fP"
+.br
+.ti -1c
+.RI "\fBtemperature\fP"
+.br
+.ti -1c
+.RI "string \fBa\fP = str(\fBh\fP)+str(\fBz\fP)+str(\fBe\fP) + '|' + \fBtimestamp\fP + ' | ' + ' {0:0\&.1\fBf\fP}*C {1:0\&.1\fBf\fP}%'\&.format(\fBtemperature\fP,\fBhumidity\fP)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "string Sense\&.a = str(\fBh\fP)+str(\fBz\fP)+str(\fBe\fP) + '|' + \fBtimestamp\fP + ' | ' + ' {0:0\&.1\fBf\fP}*C {1:0\&.1\fBf\fP}%'\&.format(\fBtemperature\fP,\fBhumidity\fP)"
+
+.SS "Sense\&.datestamp = dateTimeObj\&.strftime('%Y\-%m\-%d')"
+
+.SS "Sense\&.dateTimeObj = datetime\&.now()"
+
+.SS "int Sense\&.e = 0"
+
+.SS "Sense\&.f = open('\&.\&./senselog\&.txt', '\fBa\fP+')"
+
+.SS "int Sense\&.gpio = 4"
+
+.SS "int Sense\&.h = 0"
+
+.SS "Sense\&.humidity"
+
+.SS "Sense\&.sensor = Adafruit_DHT\&.DHT22"
+
+.SS "Sense\&.temperature"
+
+.SS "Sense\&.timestamp = dateTimeObj\&.strftime('(%H:%M)')"
+
+.SS "int Sense\&.z = 0"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

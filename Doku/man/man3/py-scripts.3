@@ -1,0 +1,114 @@
+.TH "py-scripts" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+py-scripts
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBautonmousDrive\fP"
+.br
+.ti -1c
+.RI " \fBmyLib\fP"
+.br
+.ti -1c
+.RI " \fBtryouts\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBclean\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBenableA\fP = 36"
+.br
+.ti -1c
+.RI "int \fBenableB\fP = 32"
+.br
+.ti -1c
+.RI "int \fBport1\fP = 40"
+.br
+.ti -1c
+.RI "int \fBport2\fP = 38"
+.br
+.ti -1c
+.RI "int \fBport3\fP = 35"
+.br
+.ti -1c
+.RI "int \fBport4\fP = 37"
+.br
+.ti -1c
+.RI "int \fBlampA\fP = 33"
+.br
+.ti -1c
+.RI "int \fBlampB\fP = 31"
+.br
+.ti -1c
+.RI "int \fBstart_dc\fP = 100"
+.br
+.ti -1c
+.RI "int \fBcont_dc\fP = 50"
+.br
+.ti -1c
+.RI "\fBwheelright_pwm\fP = GPIO\&.PWM(\fBenableA\fP, 100)"
+.br
+.ti -1c
+.RI "\fBwheelleft_pwm\fP = GPIO\&.PWM(\fBenableB\fP, 100)"
+.br
+.ti -1c
+.RI "\fBf\fP = open('\&.\&./test\&.txt', 'r')"
+.br
+.RI "_________Hauptprogramm_____________################################# "
+.ti -1c
+.RI "\fBlines\fP = f\&.readlines()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def py\-scripts\&.clean ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "int py\-scripts\&.cont_dc = 50"
+
+.SS "int py\-scripts\&.enableA = 36"
+
+.SS "int py\-scripts\&.enableB = 32"
+
+.SS "py\-scripts\&.f = open('\&.\&./test\&.txt', 'r')"
+
+.PP
+_________Hauptprogramm_____________################################# print('main') 
+.SS "int py\-scripts\&.lampA = 33"
+
+.SS "int py\-scripts\&.lampB = 31"
+
+.SS "py\-scripts\&.lines = f\&.readlines()"
+
+.SS "int py\-scripts\&.port1 = 40"
+
+.SS "int py\-scripts\&.port2 = 38"
+
+.SS "int py\-scripts\&.port3 = 35"
+
+.SS "int py\-scripts\&.port4 = 37"
+
+.SS "int py\-scripts\&.start_dc = 100"
+
+.SS "py\-scripts\&.wheelleft_pwm = GPIO\&.PWM(\fBenableB\fP, 100)"
+
+.SS "py\-scripts\&.wheelright_pwm = GPIO\&.PWM(\fBenableA\fP, 100)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

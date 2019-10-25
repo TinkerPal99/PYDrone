@@ -1,0 +1,71 @@
+\hypertarget{namespacesonic__sense}{}\doxysection{sonic\+\_\+sense Namespace Reference}
+\label{namespacesonic__sense}\index{sonic\_sense@{sonic\_sense}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacesonic__sense_ad0b09f7321d25ea3dc7bcb6d8ec6f6db}{measure}} ()
+\item 
+def \mbox{\hyperlink{namespacesonic__sense_adf94124b0fa57e0ae09b98479b8ef2a8}{measure\+\_\+average}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacesonic__sense_aea87c782ffecbbe8c013bd3a3f766581}{G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER}} = 16
+\item 
+int \mbox{\hyperlink{namespacesonic__sense_ae7ac9c602df6344049310e8d91557bc0}{G\+P\+I\+O\+\_\+\+E\+C\+HO}} = 18
+\item 
+int \mbox{\hyperlink{namespacesonic__sense_afee178afd72b35cc4c98a8b46cae47f3}{temperature}} = 20
+\item 
+int \mbox{\hyperlink{namespacesonic__sense_a51d48defc7e3d3292d349cb201c2a4f5}{speed\+Sound}} = 33100 + (0.\+6 $\ast$ \mbox{\hyperlink{namespacesonic__sense_afee178afd72b35cc4c98a8b46cae47f3}{temperature}})
+\item 
+def \mbox{\hyperlink{namespacesonic__sense_a6f513453e86d12fdc01b9f30caf2205d}{distance}} = \mbox{\hyperlink{namespacesonic__sense_adf94124b0fa57e0ae09b98479b8ef2a8}{measure\+\_\+average}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacesonic__sense_ad0b09f7321d25ea3dc7bcb6d8ec6f6db}\label{namespacesonic__sense_ad0b09f7321d25ea3dc7bcb6d8ec6f6db}} 
+\index{sonic\_sense@{sonic\_sense}!measure@{measure}}
+\index{measure@{measure}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily def sonic\+\_\+sense.\+measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacesonic__sense_autotoc_md0}{}\doxysubsubsection{Distance measurement function}\label{namespacesonic__sense_autotoc_md0}
+\mbox{\Hypertarget{namespacesonic__sense_adf94124b0fa57e0ae09b98479b8ef2a8}\label{namespacesonic__sense_adf94124b0fa57e0ae09b98479b8ef2a8}} 
+\index{sonic\_sense@{sonic\_sense}!measure\_average@{measure\_average}}
+\index{measure\_average@{measure\_average}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{measure\_average()}{measure\_average()}}
+{\footnotesize\ttfamily def sonic\+\_\+sense.\+measure\+\_\+average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesonic__sense_a6f513453e86d12fdc01b9f30caf2205d}\label{namespacesonic__sense_a6f513453e86d12fdc01b9f30caf2205d}} 
+\index{sonic\_sense@{sonic\_sense}!distance@{distance}}
+\index{distance@{distance}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily def sonic\+\_\+sense.\+distance = \mbox{\hyperlink{namespacesonic__sense_adf94124b0fa57e0ae09b98479b8ef2a8}{measure\+\_\+average}}()}
+
+\mbox{\Hypertarget{namespacesonic__sense_ae7ac9c602df6344049310e8d91557bc0}\label{namespacesonic__sense_ae7ac9c602df6344049310e8d91557bc0}} 
+\index{sonic\_sense@{sonic\_sense}!GPIO\_ECHO@{GPIO\_ECHO}}
+\index{GPIO\_ECHO@{GPIO\_ECHO}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{GPIO\_ECHO}{GPIO\_ECHO}}
+{\footnotesize\ttfamily int sonic\+\_\+sense.\+G\+P\+I\+O\+\_\+\+E\+C\+HO = 18}
+
+\mbox{\Hypertarget{namespacesonic__sense_aea87c782ffecbbe8c013bd3a3f766581}\label{namespacesonic__sense_aea87c782ffecbbe8c013bd3a3f766581}} 
+\index{sonic\_sense@{sonic\_sense}!GPIO\_TRIGGER@{GPIO\_TRIGGER}}
+\index{GPIO\_TRIGGER@{GPIO\_TRIGGER}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{GPIO\_TRIGGER}{GPIO\_TRIGGER}}
+{\footnotesize\ttfamily int sonic\+\_\+sense.\+G\+P\+I\+O\+\_\+\+T\+R\+I\+G\+G\+ER = 16}
+
+\mbox{\Hypertarget{namespacesonic__sense_a51d48defc7e3d3292d349cb201c2a4f5}\label{namespacesonic__sense_a51d48defc7e3d3292d349cb201c2a4f5}} 
+\index{sonic\_sense@{sonic\_sense}!speedSound@{speedSound}}
+\index{speedSound@{speedSound}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{speedSound}{speedSound}}
+{\footnotesize\ttfamily int sonic\+\_\+sense.\+speed\+Sound = 33100 + (0.\+6 $\ast$ \mbox{\hyperlink{namespacesonic__sense_afee178afd72b35cc4c98a8b46cae47f3}{temperature}})}
+
+\mbox{\Hypertarget{namespacesonic__sense_afee178afd72b35cc4c98a8b46cae47f3}\label{namespacesonic__sense_afee178afd72b35cc4c98a8b46cae47f3}} 
+\index{sonic\_sense@{sonic\_sense}!temperature@{temperature}}
+\index{temperature@{temperature}!sonic\_sense@{sonic\_sense}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily int sonic\+\_\+sense.\+temperature = 20}
+

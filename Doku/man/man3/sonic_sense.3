@@ -1,0 +1,60 @@
+.TH "sonic_sense" 3 "Tue Oct 22 2019" "Version 1.0" "PyDrone" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sonic_sense
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBmeasure\fP ()"
+.br
+.ti -1c
+.RI "def \fBmeasure_average\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBGPIO_TRIGGER\fP = 16"
+.br
+.ti -1c
+.RI "int \fBGPIO_ECHO\fP = 18"
+.br
+.ti -1c
+.RI "int \fBtemperature\fP = 20"
+.br
+.ti -1c
+.RI "int \fBspeedSound\fP = 33100 + (0\&.6 * \fBtemperature\fP)"
+.br
+.ti -1c
+.RI "def \fBdistance\fP = \fBmeasure_average\fP()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def sonic_sense\&.measure ()"
+
+.SS "Distance measurement function"
+
+.SS "def sonic_sense\&.measure_average ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "def sonic_sense\&.distance = \fBmeasure_average\fP()"
+
+.SS "int sonic_sense\&.GPIO_ECHO = 18"
+
+.SS "int sonic_sense\&.GPIO_TRIGGER = 16"
+
+.SS "int sonic_sense\&.speedSound = 33100 + (0\&.6 * \fBtemperature\fP)"
+
+.SS "int sonic_sense\&.temperature = 20"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PyDrone from the source code\&.

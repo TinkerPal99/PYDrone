@@ -1,0 +1,104 @@
+\hypertarget{namespacepy-scripts_1_1archiv_1_1_sense}{}\doxysection{py-\/scripts.archiv.\+Sense Namespace Reference}
+\label{namespacepy-scripts_1_1archiv_1_1_sense}\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ae2e2f0fa2e40436bf644484ce3eed80e}{sensor}} = Adafruit\+\_\+\+D\+H\+T.\+D\+H\+T22
+\item 
+int \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a895d52303969052453f1ca5cd610ce4a}{gpio}} = 4
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ac61039c6c8391fad550043ee4134fa90}{date\+Time\+Obj}} = datetime.\+now()
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a82b3cf1c41275805e4d36ce601e91fff}{datestamp}} = date\+Time\+Obj.\+strftime(\char`\"{}\%Y-\/\%m-\/\%d\char`\"{})
+\item 
+int \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad3829b6cfafedc035c527b255ff691fe}{h}} = 0
+\item 
+int \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a3a3e8b92eb316ec7efc424a508e292bb}{z}} = 0
+\item 
+int \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ab159412e8b0d8377df18676d82d84d43}{e}} = 0
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}{f}} = open(\char`\"{}../senselog.\+txt\char`\"{}, \char`\"{}\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a5672e88650338eeade65d1c2eed89b17}{a}}+\char`\"{})
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a2b9bd8971796d4b9fe9b6b4f9f33a83c}{timestamp}} = date\+Time\+Obj.\+strftime(\char`\"{}(\%H\+:\%M)\char`\"{})
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad6b010bba2be9c59363e8d169cd6ce43}{humidity}}
+\item 
+\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aefe6b927e96220e0b24f05df31594abe}{temperature}}
+\item 
+string \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a5672e88650338eeade65d1c2eed89b17}{a}} = str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad3829b6cfafedc035c527b255ff691fe}{h}})+str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a3a3e8b92eb316ec7efc424a508e292bb}{z}})+str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ab159412e8b0d8377df18676d82d84d43}{e}}) + \char`\"{}$\vert$\char`\"{} + \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a2b9bd8971796d4b9fe9b6b4f9f33a83c}{timestamp}} + \char`\"{} $\vert$ \char`\"{} + \textquotesingle{} \{0\+:0.\+1\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}{f}}\}$\ast$C \{1\+:0.\+1\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}{f}}\}\%\textquotesingle{}.format(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aefe6b927e96220e0b24f05df31594abe}{temperature}},\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad6b010bba2be9c59363e8d169cd6ce43}{humidity}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_a5672e88650338eeade65d1c2eed89b17}\label{namespacepy-scripts_1_1archiv_1_1_sense_a5672e88650338eeade65d1c2eed89b17}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!a@{a}}
+\index{a@{a}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily string py-\/scripts.\+archiv.\+Sense.\+a = str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad3829b6cfafedc035c527b255ff691fe}{h}})+str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a3a3e8b92eb316ec7efc424a508e292bb}{z}})+str(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ab159412e8b0d8377df18676d82d84d43}{e}}) + \char`\"{}$\vert$\char`\"{} + \mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a2b9bd8971796d4b9fe9b6b4f9f33a83c}{timestamp}} + \char`\"{} $\vert$ \char`\"{} + \textquotesingle{} \{0\+:0.\+1\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}{f}}\}$\ast$C \{1\+:0.\+1\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}{f}}\}\%\textquotesingle{}.format(\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_aefe6b927e96220e0b24f05df31594abe}{temperature}},\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_ad6b010bba2be9c59363e8d169cd6ce43}{humidity}})}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_a82b3cf1c41275805e4d36ce601e91fff}\label{namespacepy-scripts_1_1archiv_1_1_sense_a82b3cf1c41275805e4d36ce601e91fff}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!datestamp@{datestamp}}
+\index{datestamp@{datestamp}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{datestamp}{datestamp}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+datestamp = date\+Time\+Obj.\+strftime(\char`\"{}\%Y-\/\%m-\/\%d\char`\"{})}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_ac61039c6c8391fad550043ee4134fa90}\label{namespacepy-scripts_1_1archiv_1_1_sense_ac61039c6c8391fad550043ee4134fa90}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!dateTimeObj@{dateTimeObj}}
+\index{dateTimeObj@{dateTimeObj}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{dateTimeObj}{dateTimeObj}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+date\+Time\+Obj = datetime.\+now()}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_ab159412e8b0d8377df18676d82d84d43}\label{namespacepy-scripts_1_1archiv_1_1_sense_ab159412e8b0d8377df18676d82d84d43}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!e@{e}}
+\index{e@{e}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily int py-\/scripts.\+archiv.\+Sense.\+e = 0}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}\label{namespacepy-scripts_1_1archiv_1_1_sense_aadd3ff6d45c682fff5a38a88e59cc55c}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!f@{f}}
+\index{f@{f}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+f = open(\char`\"{}../senselog.\+txt\char`\"{}, \char`\"{}\mbox{\hyperlink{namespacepy-scripts_1_1archiv_1_1_sense_a5672e88650338eeade65d1c2eed89b17}{a}}+\char`\"{})}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_a895d52303969052453f1ca5cd610ce4a}\label{namespacepy-scripts_1_1archiv_1_1_sense_a895d52303969052453f1ca5cd610ce4a}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!gpio@{gpio}}
+\index{gpio@{gpio}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{gpio}{gpio}}
+{\footnotesize\ttfamily int py-\/scripts.\+archiv.\+Sense.\+gpio = 4}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_ad3829b6cfafedc035c527b255ff691fe}\label{namespacepy-scripts_1_1archiv_1_1_sense_ad3829b6cfafedc035c527b255ff691fe}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!h@{h}}
+\index{h@{h}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int py-\/scripts.\+archiv.\+Sense.\+h = 0}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_ad6b010bba2be9c59363e8d169cd6ce43}\label{namespacepy-scripts_1_1archiv_1_1_sense_ad6b010bba2be9c59363e8d169cd6ce43}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!humidity@{humidity}}
+\index{humidity@{humidity}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{humidity}{humidity}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+humidity}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_ae2e2f0fa2e40436bf644484ce3eed80e}\label{namespacepy-scripts_1_1archiv_1_1_sense_ae2e2f0fa2e40436bf644484ce3eed80e}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!sensor@{sensor}}
+\index{sensor@{sensor}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+sensor = Adafruit\+\_\+\+D\+H\+T.\+D\+H\+T22}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_aefe6b927e96220e0b24f05df31594abe}\label{namespacepy-scripts_1_1archiv_1_1_sense_aefe6b927e96220e0b24f05df31594abe}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!temperature@{temperature}}
+\index{temperature@{temperature}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+temperature}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_a2b9bd8971796d4b9fe9b6b4f9f33a83c}\label{namespacepy-scripts_1_1archiv_1_1_sense_a2b9bd8971796d4b9fe9b6b4f9f33a83c}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily py-\/scripts.\+archiv.\+Sense.\+timestamp = date\+Time\+Obj.\+strftime(\char`\"{}(\%H\+:\%M)\char`\"{})}
+
+\mbox{\Hypertarget{namespacepy-scripts_1_1archiv_1_1_sense_a3a3e8b92eb316ec7efc424a508e292bb}\label{namespacepy-scripts_1_1archiv_1_1_sense_a3a3e8b92eb316ec7efc424a508e292bb}} 
+\index{py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}!z@{z}}
+\index{z@{z}!py-\/scripts.archiv.Sense@{py-\/scripts.archiv.Sense}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily int py-\/scripts.\+archiv.\+Sense.\+z = 0}
+
