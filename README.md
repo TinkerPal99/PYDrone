@@ -2,7 +2,9 @@
 **Repository for Pydrone Project, running on RPI, coded in Python** <br>
 **Author :** TinkerPal99 <br>
 **Start of project on github:** 12.10.2019 <br>
-Contributors:
+Contributors:<br>
+**Documentation can be found right here :** https://github.com/TinkerPal99/PYDrone/blob/master/Doku/html/index.html
+
 
 __*Summary*__
 1. First things First 
