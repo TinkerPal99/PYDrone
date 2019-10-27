@@ -3,7 +3,7 @@
 **Author :** TinkerPal99 <br>
 **Start of project on github:** 12.10.2019 <br>
 Contributors:<br>
-**Documentation can be found right here :** https://github.com/TinkerPal99/PYDrone/blob/master/Doku/html/____init_____8py.html
+**Documentation can be found right here :** https://github.com/TinkerPal99/PYDrone/blob/master/Doku/html/index.html
 
 
 __*Summary*__
