@@ -11,45 +11,42 @@
 # <td>ckeck_payment(non_functional)</td>
 # <tr></table>
 # <p>
-#<br><br>
+# <br><br>
 #
 #
-#_____________________________________________________________________________________________________________
+# _____________________________________________________________________________________________________________
 
-#! usr/bin/env/python
+# ! usr/bin/env/python
+from __future__ import print_function
 import httplib
 import time
 
 
-def request():
+def request(adresse, path):
     ##
     # Documentation for method.
     #
     # <b>request(_)</b>
-    #!WIP!
+    # !WIP!
     # schickt Anfrage an Adresse
-    valid_request = False
     try:
-        conn = httplib.HTTPConnection("www.muster.de")
-        conn.request("Get", "/muster/muster")
+        conn = httplib.HTTPConnection(adresse)
+        conn.request("Get", path)
         r1 = conn.getresponse()
-        # print r1.status, r1.timestamp, r1.address
-        if r1.status == 200 and r1.timestamp == time.strftime("%d.%m.%Y %H:%M:%S"):
-            valid_request = True
-            valid_address = r1.adress
-        conn.close()
-    except:
-        print "Server not reachable"
+        answer = True
 
-    return valid_request, valid_address
+    except:
+        print ("Server not reachable")
+        answer = False
+    return answer
 
 
 def check_payment():
     ##
     # Documentation for method.
-    #!WIP!
+    # !WIP!
     # <b>check_payment(_)</b>
-    #!WIP!
+    # !WIP!
     # schickt Anfrage an Adresse, überprüft einen Wert und gibt boolean als return-Wert
     got_payment = False
     try:
@@ -60,6 +57,6 @@ def check_payment():
             got_payment = True
         conn.close()
     except:
-        print "Server not reachable"
+        print("Server not reachable")
 
     return got_payment
