@@ -142,7 +142,14 @@
 
 </p>
 </div>
-<iframe src="senselog.txt" width="21%" id="log1">
-<iframe src="senselog.txt" width="25%" id="log2">
+<iframe  width="21%" id="log1">
+    <?php
+        numOfShownLines = 1
+        $file = escapeshellarg( '/var/www/html/main/test.txt' );
+        %last_line = `tail -n $numOfShownLines $file`
+        echo $last_line
+     ?>
+</iframe>
+
 </body>
 </html>
