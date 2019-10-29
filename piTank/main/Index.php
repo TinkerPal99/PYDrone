@@ -145,7 +145,23 @@
 <iframe  width="21%" id="log1">
     <?php
         numOfShownLines = 1
-        $file = escapeshellarg( '/var/www/html/main/test.txt' );
+        $file = escapeshellarg( '/var/www/html/main/senselog.txt' );
+        %last_line = `tail -n $numOfShownLines $file`
+        echo $last_line
+     ?>
+</iframe>
+<iframe  width="21%" id="log1">
+    <?php
+        numOfShownLines = 1
+        $file = escapeshellarg( '/var/www/html/main/gyrolog.txt' );
+        %last_line = `tail -n $numOfShownLines $file`
+        echo $last_line
+     ?>
+</iframe>
+<iframe  width="21%" id="log1">
+    <?php
+        numOfShownLines = 1
+        $file = escapeshellarg( '/var/www/html/main/airlog.txt' );
         %last_line = `tail -n $numOfShownLines $file`
         echo $last_line
      ?>
