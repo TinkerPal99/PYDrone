@@ -21,9 +21,9 @@ class PiControl:
         gyroskop_yout = lib_gy521.read_word_2c(0x45)
         gyroskop_zout = lib_gy521.read_word_2c(0x47)
 
-        # print("gyroskop_xout: ", ("%5d" % gyroskop_xout), " skaliert: ", (gyroskop_xout / 131))
-        # print("gyroskop_yout: ", ("%5d" % gyroskop_yout), " skaliert: ", (gyroskop_yout / 131))
-        # print("gyroskop_zout: ", ("%5d" % gyroskop_zout), " skaliert: ", (gyroskop_zout / 131))
+        # print("gyroskop_xout: ", ("%5d" % gyroskop_xout), " skaliert: ", (gyroskop_xout / 100))
+        # print("gyroskop_yout: ", ("%5d" % gyroskop_yout), " skaliert: ", (gyroskop_yout / 100))
+        # print("gyroskop_zout: ", ("%5d" % gyroskop_zout), " skaliert: ", (gyroskop_zout / 100))
 
         gy_x_skal = gyroskop_xout / 100
         gy_y_skal = gyroskop_yout / 100
@@ -49,19 +49,19 @@ class PiControl:
             print("backward")
             self.call_address("RPS5.php")
             # urllib.urlopen("http://192.168.8.200/main/RPS5.php")
-        elif self.gyro_out[2] >= 50:
+        elif self.gyro_out[0] >= 50:
             print("right")
             self.call_address("RPS5.php")
             # urllib.urlopen("http://192.168.8.200/main/RPS4.php")
-        elif self.gyro_out[2] <= -50:
+        elif self.gyro_out[0] <= -50:
             print("left")
             self.call_address("RPS3.php")
             # urllib.urlopen("http://192.168.8.200/main/RPS3.php")
-        elif self.gyro_out[3] >= 50:
+        elif self.gyro_out[2] >= 50:
             print("down")
             self.call_address("RPS2.php")
             # urllib.urlopen("http://192.168.8.200/main/RPS2.php")
-        elif self.gyro_out[3] <= -50:
+        elif self.gyro_out[2] <= -50:
             print("up")
             self.call_address("RPS2.php")
             # urllib.urlopen("http://192.168.8.200/main/RPS2.php")
