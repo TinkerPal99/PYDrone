@@ -23,4 +23,8 @@ while True:
             piControl.gyro_CallOnRead(piControl.gyro_read())
             time.sleep(0.5)
             if GPIO.input(Taster) == GPIO.HIGH:
+                GPIO.output(LAMP_Y) = GPIO.HIGH
+                GPIO.output(LAMP_G) = GPIO.LOW
+                time.sleep(5)
                 break
+    time.sleep(1)
