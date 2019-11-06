@@ -1,13 +1,38 @@
 #! usr/bin/env/python
 import lib_gy521
 import RPi.GPIO as GPIO
-import urllib, time
-
+import urllib, time, datetime
 
 class PiControl:
-    def __init__(self, address):
+    def __init__(self, address, path):
         self.gyro_out = []
         self.destination_address = address
+        self.cam = PiCamera()
+        self.path_for_savings = path
+
+    def setSettings_of_Cam(width, height, framerate):
+        self.cam.resolution = (width, height)
+        self.cam.framerate = framerate
+
+    def printSettings_of_Cam(self):
+        print ("Resolution " + self.cam.resolution)
+        print ("Framerate" + self.cam.framerate)
+
+    def Cam_preview(self, lenght):
+        camera.start_preview()
+        time.sleep(lenght)
+        camera.stop_preview()
+
+    def Cam_takePic(self):
+        name = self.path_for_savings + "/" + datetime.now()
+        try:
+            camera.capture(name)
+            summary = ("Shot is taken and saved as " + name  )
+        except PiCameraError:
+            summary = ("Something with the camera went wrong")
+        except ValueError or PiCameraError :
+            summary = ("Please check your path.")
+        return summary
 
     def get_call_address(self):
         print(self.destination_address)
