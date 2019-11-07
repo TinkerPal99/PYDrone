@@ -9,19 +9,22 @@ class PiControl:
         self.destination_address = address
         self.cam = PiCamera()
         self.path_for_savings = path
-
+#----------------------------cam----------------------------------------------------------------
     def setSettings_of_Cam(width, height, framerate):
         self.cam.resolution = (width, height)
         self.cam.framerate = framerate
+
 
     def printSettings_of_Cam(self):
         print ("Resolution " + self.cam.resolution)
         print ("Framerate" + self.cam.framerate)
 
+
     def Cam_preview(self, lenght):
         camera.start_preview()
         time.sleep(lenght)
         camera.stop_preview()
+
 
     def Cam_takePic(self):
         name = self.path_for_savings + "/" + datetime.now()
@@ -34,12 +37,41 @@ class PiControl:
             summary = ("Please check your path.")
         return summary
 
+
+    def Cam_takeCaptionedPic(self, text):
+        name = self.path_for_savings + "/" + datetime.now()
+        camera.annotate_text = text
+        try:
+            camera_takePic(name)
+            summary = ("Shot is taken and saved as " + name)
+            camera.annotate_text = ""
+        except PiCameraError:
+            summary = ("Something with the camera went wrong")
+        except ValueError or PiCameraError:
+            summary = ("Please check your path.")
+        return summary
+
+
+    def Cam_takeShot(self, length):
+        name = self.path_for_savings + "/" + datetime.now()
+        try:
+            camera.start_recording(name)
+            time.sleep(length)
+            camera.stop_recording()
+            summary = ("Shot is taken and saved as " + name  )
+        except PiCameraError:
+            summary = ("Something with the camera went wrong")
+        except ValueError or PiCameraError :
+            summary = ("Please check your path.")
+        return summary
+
+#-----------------------------------webacess------------------------------------
     def get_call_address(self):
         print(self.destination_address)
 
     def call_address(self, address_appendix):
         urllib.urlopen(self.destination_adress + address_appendix)
-
+#------------------------------gyro---------------------------------------------
     def gyro_read(self):
 
         gyroskop_xout = lib_gy521.read_word_2c(0x43)

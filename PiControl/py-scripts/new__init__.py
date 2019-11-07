@@ -8,7 +8,7 @@ import time
 GPIO.setmode(GPIO.BOARD)
 
 # --------------------------Preparation---------------------------------------------------------------------------------
-piControl = class_PiControl.PiControl("http://192.168.8.200/main/")
+piControl = class_PiControl.PiControl("http://192.168.8.200/main/", "/savings")
 
 LAMP_Y = 1
 LAMP_G = 1
