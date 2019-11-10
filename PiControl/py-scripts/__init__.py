@@ -1,10 +1,12 @@
 # coding=utf-8
-#! usr/bin/env/python
+# ! usr/bin/env/python
 
 import RPi.GPIO as GPIO
 from myLib import lib_gy521
 import urllib
 import time
+
+GPIO.setmode(GPIO.BOARD)
 
 
 while True:
@@ -21,26 +23,43 @@ while True:
     gy_z_skal = gyroskop_zout / 100
     time.sleep(1)
 
-#    print (gy_x_skal)
-#    print (gy_y_skal)
-    #print (gy_z_skal)
+    #    print (gy_x_skal)
+    #    print (gy_y_skal)
+    # print (gy_z_skal)
 
-    if gy_x_skal <= -30:
-        print("forward")
-        urllib.urlopen("http://192.168.8.200/main/RPS1.php")
-    elif gy_x_skal >= 30:
-        print("stop!")
-        urllib.urlopen("http://192.168.8.200/main/RPS2.php")
-    elif gy_y_skal >= 40:
-        print("right")
-        urllib.urlopen("http://192.168.8.200/main/RPS4.php")
-    elif gy_y_skal <= -40:
-        print("left")
-        urllib.urlopen("http://192.168.8.200/main/RPS3.php")
-   # elif gy_z_skal >= 15:
-   #     print("down")
-   #     urllib.urlopen("http://192.168.8.200/main/RPS2.php")
-   # elif gy_z_skal <= -15:
-   #     print("up")
-   #     urllib.urlopen("http://192.168.8.200/main/RPS2.php")
+    try:
+        # datei oeffnen zum bearbeiten
+        f = open("../test.txt", "r")
+        lines = f.readlines()
+        f.close()
+        time.sleep(0.5)
+        for line in lines:
+            f = open("../test.txt", "w")
 
+        if "start" in line:
+            print ("Start")
+            while 1:
+		print ("while")
+                if gy_x_skal <= -30:
+                    print("forward")
+                    urllib.urlopen("http://192.168.8.200/main/RPS1.php")
+                elif gy_x_skal >= 30:
+                    print("stop!")
+                    urllib.urlopen("http://192.168.8.200/main/RPS2.php")
+                elif gy_y_skal >= 40:
+                    print("right")
+                    urllib.urlopen("http://192.168.8.200/main/RPS4.php")
+                elif gy_y_skal <= -40:
+                    print("left")
+                    urllib.urlopen("http://192.168.8.200/main/RPS3.php")
+#               elif gy_z_skal >= 15:
+#                   print("down")
+#                   urllib.urlopen("http://192.168.8.200/main/RPS2.php")
+#               elif gy_z_skal <= -15:
+#                   print("up")
+#                   urllib.urlopen("http://192.168.8.200/main/RPS2.php")
+                if "stopp" in line:
+                    print ("Stop")
+                    break
+    except KeyboardInterrupt:
+        print ("Break")

@@ -8,16 +8,14 @@
 # <h5><i>Inhalt</i>:</h5>
 # <p>
 # <br><br>
-#_______________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________
 
-#! usr/bin/env/python
-from __future__ import print_function
-from __future__ import print_function
-from __future__ import print_function
+# ! usr/bin/env/python
+
 import time
 from threading import Thread
 import RPi.GPIO as GPIO
-from myLib import lib_distance, lib_movement, lib_HTTP_Interface
+from myLib import lib_movement
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
@@ -62,11 +60,9 @@ def clean():
     return
 
 
+# _________Hauptprogramm_________________________________________________________________________________________________
 
-
-#_________Hauptprogramm_________________________________________________________________________________________________
-
-#print("main")
+# print("main")
 wheelright_pwm.start(start_dc)
 wheelleft_pwm.start(start_dc)
 
@@ -76,11 +72,11 @@ while True:
     lines = f.readlines()
     f.close()
     time.sleep(0.5)
-    #print("while")
+    # print("while")
     try:
-	#print ("try")
-        #datei oeffnen zum bearbeiten
-	for line in lines:
+        # print ("try")
+        # datei oeffnen zum bearbeiten
+        for line in lines:
             f = open("../test.txt", "w")
 
             if "RPS1" in line:
@@ -130,4 +126,3 @@ while True:
         wheelleft_pwm.stop()
         wheelright_pwm.stop()
         break
-
