@@ -1,18 +1,14 @@
 <html>
-<body>
-<h2>Module</h2>
-       		<input id="button" type="submit" name="ON" value="Aktivieren" 	 />
-		<input id="button" type="submit" name="OFF" value="Deaktivieren" />
+	<body>
+		<div name ="body">
+			<h2>PiControl</h2>
+       				<input id="button" type="submit" onclick="window.open('On.php')"  name="An" value="Aktivieren" 	 />
+				<input id="button" type="submit" onclick="window.open('Off.php')" name="Aus" value="Deaktivieren" />
 
-<?php
+		<?php
 	$datetime = date("Y/m/d") + " " + date("h:i:sa");
 	$content = "Lizens ausgestellt am $datetime";
-        if( isset ( $_REQUEST["ON"]))
-			 $datei = fopen("Lizenzen/Modul1.txt","w");
-
-                        fwrite($datei, $content);
-                        fclose($datei);
-                        echo ("Hello");
+        if( isset ( $_REQUEST["An"]))
 
                 {
 	                $datei = fopen("Lizenzen/Modul1.txt","w");
@@ -22,12 +18,13 @@
 			echo ("Hello");
                 }
 
-        if( isset ( $_REQUEST["OFF"]))
+        if( isset ( $_REQUEST["Aus"]))
                 {
                 	$unlink = unlink("Lizenzen/Modul1.txt");
         		echo ("Hello");
-        }
+	        }
 
-?>
-</body>
+			?>
+		</div>
+	</body>
 </html>
