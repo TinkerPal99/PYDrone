@@ -15,8 +15,8 @@ __First things First__
 
 Dies ist eine Kontrollsoftware für verschiedene Dronen, Rover und ähnliches. 
 Basierend auf einem RPI, und programmiert in Python.
-Die tatsächliche init kann unter _main/py-scripts_ gefunden werden.
-Das Webinterface kann in _/main_ gefunden werden und heißt _Index.php_.
+Inzwischen gibt es 2 Pakete für 2 Geräte. Einmal die PiControl, ein handschuh-artiges Gerät zur Gestenkontrolle (weiteres folgt)
+und der eigentliche PiTank (PiCar-basiert).
 
 
 __Preparation__
