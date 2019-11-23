@@ -1,4 +1,7 @@
-# PYDrone V1.0
+Hello, all you. Neither you are a visitor or a guest. A future coworker or a former coworker of this project, I am happy to greet you all.
+This is m first bigger project. So please excuse major or minor mistakes in code or documentation. You can always leave advices and make me happy :D
+
+# PYDrone V0.2
 **Repository for Pydrone Project, running on RPI, coded in Python** <br>
 **Author :** TinkerPal99 <br>
 **Start of project on github:** 12.10.2019 <br>
