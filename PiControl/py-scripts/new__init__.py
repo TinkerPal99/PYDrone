@@ -21,6 +21,7 @@ __logger_error = logging.getLogger()
 __logger_error.addHandler(__log_handler)
 #Standardloglevel einsetzen
 __logger_error.setLevel(logging.DEBUG)
+__logger_error.setLevel(logging.CRITICAL)
 
 
 logging.basicConfig(
@@ -29,9 +30,7 @@ logging.basicConfig(
 #Ausgabe auf terminal
 __log_handler = logging.StreamHandler(sys.stdout)
 
-#setzen eines eigenen Loggerfromats
-__log_form = logging.Formatter("%(asctime)s %(levename)s: %(messages)s", "%d.%m.%Y %H:%M:%S")
-__log_handler.setFormatter(__log_form)
+#setzen des Loggerfromats auf den info-logger
 __logger = logging.getLogger()
 __logger.addHandler(__log_handler)
 #Standardloglevel einsetzen
