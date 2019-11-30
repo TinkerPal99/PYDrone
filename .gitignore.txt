@@ -1,2 +1,0 @@
-#ignore all python compiled
-*pyc

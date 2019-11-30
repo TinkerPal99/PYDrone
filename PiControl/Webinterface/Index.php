@@ -11,7 +11,7 @@
         if( isset ( $_REQUEST["An"]))
 
                 {
-	                $datei = fopen("Lizenzen/Modul1.txt","w");
+	                $datei = fopen("../Lizenzen/Modul1.txt","w");
 
 	                fwrite($datei, $content);
 		        fclose($datei);
@@ -20,7 +20,7 @@
 
         if( isset ( $_REQUEST["Aus"]))
                 {
-                	$unlink = unlink("Lizenzen/Modul1.txt");
+                	$unlink = unlink("../Lizenzen/Modul1.txt");
         		echo ("Hello");
 	        }
 
