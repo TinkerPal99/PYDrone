@@ -1,63 +1,71 @@
 # coding=utf-8
-#! usr/bin/env/python
+# !usr/bin/env/python
+import datetime
 
 import RPi.GPIO as GPIO
-from myLib import lib_gy521
-import urllib
-import time
-import os
+from myLib import lib_gy521, class_PiControl
+import time, urllib2, logging, sys, os
 
 GPIO.setmode(GPIO.BOARD)
-gyro = [0, 0]
+# ----------------------------logging_basicconfig---------------------
+# TODO IDEA set logging in lib do reuse. Only do if this version of logging proofs to work fine
 
-a = "../Lizenzen/"
+# debugging-log
+logging.basicConfig(
+    filename="../logs/init_error.log",
+    filemode="a")
+# Ausgabe auf terminal
+__log_handler = logging.StreamHandler(sys.stdout)
 
-
-def gyroskope():
-    gyroskop_xout = lib_gy521.read_word_2c(0x43)
-    gyroskop_yout = lib_gy521.read_word_2c(0x45)
-    # gyroskop_zout = lib_gy521.read_word_2c(0x47)
-
-#TODO Entfernen des folgenden Blocks 19.11.2019
-    # print("gyroskop_xout: ", ("%5d" % gyroskop_xout), " skaliert: ", (gyroskop_xout / 131))
-    # print("gyroskop_yout: ", ("%5d" % gyroskop_yout), " skaliert: ", (gyroskop_yout / 131))
-    # print("gyroskop_zout: ", ("%5d" % gyroskop_zout), " skaliert: ", (gyroskop_zout / 131))
-
-    gy_x_skal = (gyroskop_xout / 100) - 40
-    gy_y_skal = gyroskop_yout / 100
-    # gy_z_skal = gyroskop_zout / 100
-    time.sleep(1)
-
-    gyro[0] = gyro[0] + gy_x_skal
-    gyro[1] = gyro[1] + gy_y_skal
-
-    print ("[" + str(gyro[0]) + "][" + str(gyro[1]) + "]")
-    return gyro
+# setzen eines eigenen Loggerfromats
+__log_form = logging.Formatter("%(asctime)s %(levename)s: %(messages)s", "%d.%m.%Y %H:%M:%S")
+__log_handler.setFormatter(__log_form)
 
 
+__logger_error = logging.getLogger()
+__logger_error.addHandler(__log_handler)
+# Standardloglevel einsetzen
+__logger_error.setLevel(logging.DEBUG)
+__logger_error.setLevel(logging.CRITICAL)
+
+# info-log
+logging.basicConfig(
+    filename="../logs/init.log",
+    filemode="w")
+# Ausgabe auf terminal
+__log_handler = logging.StreamHandler(sys.stdout)
+
+# setzen des Loggerfromats auf den info-logger
+__logger = logging.getLogger()
+__logger.addHandler(__log_handler)
+# Standardloglevel einsetzen
+__logger.setLevel(logging.INFO)
+
+currentDir = os.getcwd()
+# TODO Remove unused datetime
+# dateTimeObj = datetime.now()
+# datestamp = dateTimeObj.strftime("%Y-%m-%d")
+# --------------------------Preparation---------------------------------------------------------------------------------
+callIP = "http://192.168.8.200/main/"
+saveSpace = "/savings"
+
+piControl = class_PiControl.PiControl(callIP, saveSpace)
+logging.log(logging.INFO,
+            "CallIP set as " + piControl.get_call_address() + ". Storage for savings set as " + currentDir + saveSpace)
+
+# -----------------------------MAIN-------------------------------------------------------------------------------------
 while True:
     try:
-        while "Modul1.txt" in os.listdir(a):
-
-            gyro = gyroskope()
-
-            if gyro[0] <= -30:
-                print("forward")
-                urllib.urlopen("http://192.168.8.200/main/RPS1.php")
-                time.sleep(0.1)
-            elif gyro[0] >= 30:
-                print("stop!")
-                urllib.urlopen("http://192.168.8.200/main/RPS2.php")
-                time.sleep(0.1)
-            elif gyro[1] >= 40:
-                print("right")
-                urllib.urlopen("http://192.168.8.200/main/RPS4.php")
-                time.sleep(1)
-            elif gyro[1] <= -40:
-                print("left")
-                urllib.urlopen("http://192.168.8.200/main/RPS3.php")
-                time.sleep(1
-                           )
+        while True:
+            piControl.gyro_CallOnRead(piControl.gyro_read())
+            time.sleep(0.05)
+            logging.log(logging.INFO, " Gyro: " + piControl.gyro_read())
+        time.sleep(0.01)
+    except urllib2.URLError:
+        logging.log(logging.DEBUG, "Fehler - urllib")
     except KeyboardInterrupt:
-        print ("Manual break")
-        break
+        logging.log(logging.INFO, "Abbruch - keybord interrupt")
+        logging.shutdown()
+    except Exception as unknownException:
+        logging.log(logging.CRITICAL, "Abbruch - Kritischer unbekannter Fehler")
+        logging.shutdown()
