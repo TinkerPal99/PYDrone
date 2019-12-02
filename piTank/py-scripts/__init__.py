@@ -13,7 +13,6 @@
 # ! usr/bin/env/python
 
 import time
-from threading import Thread
 import RPi.GPIO as GPIO
 from myLib import lib_movement
 
