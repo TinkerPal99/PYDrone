@@ -16,25 +16,34 @@ def loadFeed(feed=str):
     return __newsFeed
 
 
+def print_splittedEntry_of(summary, sign=str):
+    __splitted_entry = summary.split(sign)
+    __splitted_entry.pop()
+    for x in range(0, len(__splitted_entry)):
+        print __splitted_entry[x]
+        x = x + 1
+
+
+def feedEntry(feed, entry):
+
+    entry = feed.entries[entry]
+    print ("Post Title : -" + entry.title + "- from " + entry.link)
+    print ("############################################################################################")
+    print_splittedEntry_of(entry.summary, "</p>")
+    print ("___________________________________________________________________________________________")
+
+
 def show_5_Entries_of(feed=str):
     __feed = loadFeed(feed)
     if len(__feed) < 4:
         for x in range(0, len(__feed)):
             x = x + 1
-            entry = __feed.entries[x]
-            print ("Post Title : -" + entry.title + "- from " + entry.link)
-            print ("###########################")
-            print (entry.summary)
-            print ("___________________________________________________________________________________________")
+            feedEntry(__feed, x)
     else:
         for x in range(0, 4):
             x = x + 1
-            entry = __feed.entries[x]
-            print ("Post Title : -" + entry.title + "- from " + entry.link)
-            print ("###########################")
-            print (entry.summary)
-            print ("___________________________________________________________________________________________")
+            feedEntry(__feed, x)
 
 
-show_5_Entries_of("http://www.tagesschau.de/xml/rss2")
-# checkNewFeed("http://www.tagesschau.de/xml/rss2")
+# show_5_Entries_of("https://www.theguardian.com/world/rss")
+# checkNewFeed("https://www.theguardian.com/world/rss")
