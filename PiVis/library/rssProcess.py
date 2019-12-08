@@ -3,6 +3,7 @@ import feedparser
 
 # __ExampleFeed = "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
 __ExampleFeed = "http://www.tagesschau.de/xml/rss2"
+__ExampleWeather = "https://www.wetterleitstelle.de/rss.php"
 
 
 def checkNewFeed(feed=str):
@@ -24,26 +25,34 @@ def print_splittedEntry_of(summary, sign=str):
         x = x + 1
 
 
-def feedEntry(feed, entry):
+def headline_feedEntry(preload_feed, index):
+    entry = preload_feed.entries[index]
+    print ("[" + str(index) + "]" + " Post Title : " + entry.title)
 
-    entry = feed.entries[entry]
+
+def full_feedEntry(feed_url, index):
+    __feed = loadFeed(feed_url)
+    entry = __feed.entries[index]
     print ("Post Title : -" + entry.title + "- from " + entry.link)
     print ("############################################################################################")
     print_splittedEntry_of(entry.summary, "</p>")
     print ("___________________________________________________________________________________________")
 
 
-def show_5_Entries_of(feed=str):
+def show_x_Entries_of(feed=str, x=int):
     __feed = loadFeed(feed)
-    if len(__feed) < 4:
+    if len(__feed) < x:
         for x in range(0, len(__feed)):
             x = x + 1
-            feedEntry(__feed, x)
+            headline_feedEntry(__feed, x)
     else:
-        for x in range(0, 4):
+        for x in range(0, x):
             x = x + 1
-            feedEntry(__feed, x)
+            headline_feedEntry(__feed, x)
 
 
-# show_5_Entries_of("https://www.theguardian.com/world/rss")
-# checkNewFeed("https://www.theguardian.com/world/rss")
+def show_all_Entries_of(feed=str):
+    __feed = loadFeed(feed)
+    for x in range(0, len(__feed)):
+        x = x + 1
+        headline_feedEntry(__feed, x)
