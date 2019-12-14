@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78dace36-4e7c-451c-9892-afd58715a24c" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,29 +22,25 @@
   </component>
   <component name="ProjectId" id="1ULLz0zQAxMJdILw3ABAC1LcM4s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PiVis/library/csv" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis\library\csv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis\library" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\piTank" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiControl\Webinterface" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiControl" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.__init__ (1)">
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python">
@@ -183,6 +178,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,5 +223,31 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576337660855">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576337660855" />
+    <state width="1899" height="298" key="GridCell.Tab.0.bottom" timestamp="1576350045087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
+    <state width="1899" height="298" key="GridCell.Tab.0.center" timestamp="1576350045087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="298" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
+    <state width="1899" height="298" key="GridCell.Tab.0.left" timestamp="1576350045087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="298" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
+    <state width="1899" height="298" key="GridCell.Tab.0.right" timestamp="1576350045087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="298" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576334896571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576334896571" />
   </component>
 </project>

@@ -1,17 +1,28 @@
-__Weather = ["wetter", "Wetter"]
-__News = ["Nachrichten", "nachrichten", "News", "news"]
-__Consent = ["Yes", "Jo", "Ja", "Yep", "Jep", "yes", "jo", "ja", "yep", "jep"]
-__Dissent = ["No", "Nope", "Nep", "Noe", "no", "nope", "nep", "noe"]
-__list1 = ["1", "2", "5", "7"]
-__list2 = ["3", "4", "8", "5", "9"]
+import csv
 
 # webpages
 _Guardian = "https://www.theguardian.com/world/rss"
 
-__x = 0
-__y = 0
+
+# --------------------CSVHandlle----------------------------
+def CSVtoList(inputCSV=str):
+    outputList = list
+    with open(inputCSV) as csvfile:
+        readCSV = csv.reader(csvfile, delimiter=',')
+        for row in readCSV:
+            ()
+        outputList = row
+        csvfile.close()
+        return outputList
 
 
+def rewrite_csv(fileName, newRow):
+    __new_file = open(fileName, "w")
+    __new_file.write(newRow)
+    __new_file.close()
+
+
+# ----------------------listhandle-------------------------------
 def getList(collection=list):
     return collection
 
@@ -41,3 +52,22 @@ def followUp_handle(output=str):
     if searchBy(__splitted_list, __Consent):
         __status = True
     return __status
+
+
+# -------------------------------------------------------------------
+try:
+    __Weather = CSVtoList("library/csv/Weather.csv")  # ["wetter", "Wetter"]
+    __News = CSVtoList("library/csv/News.csv")  # ["Nachrichten", "nachrichten", "News", "news"]
+    __Consent = CSVtoList(
+        "library/csv/Consent.csv")  # ["Yes", "Jo", "Ja", "Yep", "Jep", "yes", "jo", "ja", "yep", "jep"]
+    __Dissent = CSVtoList("library/csv/Dissent.csv")  # ["No", "Nope", "Nep", "Noe", "no", "nope", "nep", "noe"]
+    __Note = CSVtoList("library/csv/Note.csv")
+    __Notelist = CSVtoList("library/csv/Notes.csv")
+    __list1 = ["1", "2", "5", "7"]
+    __list2 = ["3", "4", "8", "5", "9"]
+except KeyboardInterrupt:
+    rewrite_csv("csv/Dissent.csv", ",".join(__Dissent))
+    rewrite_csv("csv/Weather.csv", ",".join(__Weather))
+    rewrite_csv("csv/News.csv", ",".join(__News))
+    rewrite_csv("csv/Consent.csv", ",".join(__Consent))
+    print ("Properly rewrote the csv's")

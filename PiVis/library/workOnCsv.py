@@ -44,7 +44,7 @@ try:
     rewrite_csv(__Path_Csv, string)
     print ("Achtung! Es sind nurnoch " + str(__VinVorrat - index) + ". Vins in ihrer Liste unverbraucht.")
 
- except TypeError:
+except TypeError:
     print ("TypeError! Please control types of imported data.")
     exit(1)
 except ReferenceError:
