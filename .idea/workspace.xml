@@ -32,17 +32,60 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis\library\csv" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis\library" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\piTank" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiControl\Webinterface" />
       <recent name="C:\Users\marwi\Desktop\PYDrone\PiControl" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marwi\Desktop\PYDrone\PiVis\library\csv" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.__init__ (1)">
+  <component name="RunManager" selected="Python.__guinit__ (1)">
+    <configuration name="__guinit__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYDrone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PiVis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PiVis/__guinit__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__guinit__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYDrone" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PiVis/library" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\marwi\Desktop\PYDrone\PiVis\__guinit__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="PYDrone" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,7 +107,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PYDrone" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -72,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PiControl" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PiVis/library/gui-tryouts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PiControl/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PiVis/library/gui-tryouts/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -98,27 +141,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\marwi\Desktop\PYDrone\PiVis\library\apiProcess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="class_PiControl" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PYDrone" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PiControl/py-scripts/myLib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PiControl/py-scripts/myLib/class_PiControl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,10 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__guinit__ (1)" />
+        <item itemvalue="Python.__guinit__" />
+        <item itemvalue="Python.__init__ (2)" />
         <item itemvalue="Python.reference" />
         <item itemvalue="Python.apiProcess" />
-        <item itemvalue="Python.class_PiControl" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -225,29 +248,37 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="198" key="#Images" timestamp="1576587607283">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="198" key="#Images/0.0.1920.1080@0.0.1920.1080" timestamp="1576587607283" />
     <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576337660855">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="732" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576337660855" />
-    <state width="1899" height="298" key="GridCell.Tab.0.bottom" timestamp="1576350045087">
+    <state width="938" height="367" key="GridCell.Tab.0.bottom" timestamp="1576842042604">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
-    <state width="1899" height="298" key="GridCell.Tab.0.center" timestamp="1576350045087">
+    <state width="938" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576842042604" />
+    <state width="938" height="367" key="GridCell.Tab.0.center" timestamp="1576842042604">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
-    <state width="1899" height="298" key="GridCell.Tab.0.left" timestamp="1576350045087">
+    <state width="938" height="367" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576842042604" />
+    <state width="938" height="367" key="GridCell.Tab.0.left" timestamp="1576842042604">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
-    <state width="1899" height="298" key="GridCell.Tab.0.right" timestamp="1576350045087">
+    <state width="938" height="367" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576842042604" />
+    <state width="938" height="367" key="GridCell.Tab.0.right" timestamp="1576842042604">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="298" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576350045087" />
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576334896571">
+    <state width="938" height="367" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576842042604" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576754908548">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576334896571" />
+    <state x="656" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576754908548" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1576756084940">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576756084940" />
   </component>
 </project>
